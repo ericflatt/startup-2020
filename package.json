@@ -1,12 +1,12 @@
 {
-    "name": "iamjesseshow-starter-project",
+    "name": "startup2020",
     "version": "1.0.0",
-    "description": "Starter Project",
+    "description": "StartUp 2020",
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Jesse Showalter",
+    "author": "Eric Flatt",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.3",
