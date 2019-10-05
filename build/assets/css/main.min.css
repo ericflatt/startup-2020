@@ -255,29 +255,45 @@ input[type="button"] {
 
 body {
   background-color: white;
-  font-family: 'gt'; }
+  font-family: 'gt';
+  height: 100vh; }
+
+@font-face {
+  font-family: gt;
+  src: url(../build/gt-america-trial-expanded-bold-webfont.woff); }
 
 #hero {
   height: 100vh; }
 
 .heroGif {
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
   position: absolute;
   top: 10%;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  padding: 0; }
+
+@media only screen and (max-width: 768px) {
+  .heroGif {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 10px; } }
 
 .centeredText {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 45px;
+  color: black;
+  font-size: 25px;
   font-family: 'bold'; }
-
-@font-face {
-  font-family: gt;
-  src: url(gt-america-trial-expanded-bold-webfont.woff); }
