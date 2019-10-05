@@ -1,5 +1,6 @@
 body{
   background-color: white;
+  font-family: 'gt';
 }
 
 #hero{
@@ -26,3 +27,7 @@ body{
   font-family: 'bold';
 }
 
+@font-face {
+  font-family: gt;
+  src: url(gt-america-trial-expanded-bold-webfont.woff);
+}

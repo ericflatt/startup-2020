@@ -254,7 +254,8 @@ input[type="button"] {
   left: 0; }
 
 body {
-  background-color: white; }
+  background-color: white;
+  font-family: 'gt'; }
 
 #hero {
   height: 100vh; }
@@ -276,3 +277,7 @@ body {
   color: white;
   font-size: 45px;
   font-family: 'bold'; }
+
+@font-face {
+  font-family: gt;
+  src: url(gt-america-trial-expanded-bold-webfont.woff); }
