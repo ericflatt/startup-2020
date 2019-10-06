@@ -294,6 +294,5 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  font-size: 25px;
-  font-family: 'bold'; }
+  color: white;
+  font-size: 25px; }
