@@ -1,7 +1,7 @@
 body{
   background-color: white;
   font-family: 'gt';
-  height: 100vh;
+  
 }
 
 @font-face {
@@ -11,6 +11,8 @@ body{
 
 #hero{
   height: 100vh;
+  background-repeat: no-repeat;
+  
 }
 
 .heroGif{
@@ -48,6 +50,6 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 25px;
+  font-size: 18px;
 }
 

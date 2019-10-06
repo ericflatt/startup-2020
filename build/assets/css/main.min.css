@@ -255,15 +255,15 @@ input[type="button"] {
 
 body {
   background-color: white;
-  font-family: 'gt';
-  height: 100vh; }
+  font-family: 'gt'; }
 
 @font-face {
   font-family: gt;
   src: url(../build/gt-america-trial-expanded-bold-webfont.woff); }
 
 #hero {
-  height: 100vh; }
+  height: 100vh;
+  background-repeat: no-repeat; }
 
 .heroGif {
   width: 40%;
@@ -295,4 +295,4 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 25px; }
+  font-size: 18px; }
