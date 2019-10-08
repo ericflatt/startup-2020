@@ -1,7 +1,15 @@
 body{
   background-color: white;
   font-family: 'gt';
-  
+  width: 5000px;
+	position: absolute;
+}
+
+.page {
+	width: 520px;
+	padding: 0px;
+	background: #fff;
+	float: left;
 }
 
 @font-face {
@@ -12,18 +20,24 @@ body{
 #hero{
   height: 100vh;
   background-repeat: no-repeat;
+}
+
+.pageOne{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
   
+    
 }
 
 .heroGif{
-  width: 40%;
-  margin: 0 auto;
-  position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
+  width: 100%;
+  margin: auto;
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -35,7 +49,18 @@ body{
   left: 0;
   right: 0;
   padding: 0;
+  }
 }
+
+.centered{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title{
+  z-index: 999;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -46,10 +71,52 @@ body{
 
 .centeredText{
   position: absolute;
+  font-size: 18px;
+  left: 35vw;
+  top: 45%;
+}
+
+
+#hero2{
+  height: 100vh;
+  background-repeat: no-repeat;
+  
+}
+
+.heroGif2{
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroGif2{
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .title2{
+    font-size: 10px;  
+}
+}
+
+.centeredText2{
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 18px;
 }
-
