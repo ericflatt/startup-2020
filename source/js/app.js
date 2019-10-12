@@ -6,7 +6,7 @@ document.location = "https://google.com";
 
 
 window.sr = ScrollReveal(); 
-//how to use scroll reveal
+//how to use scrollReveal
 // sr.reveal('h1', {
 //     delay: 0,
 //     duration: 200,
