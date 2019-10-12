@@ -1,11 +1,12 @@
 //mobile redirect
+//mobile only site will be built
 if (screen.width <= 768) {
 document.location = "https://google.com";
 }
 
-// JavaScript
-window.sr = ScrollReveal(); 
 
+window.sr = ScrollReveal(); 
+//how to use scroll reveal
 // sr.reveal('h1', {
 //     delay: 0,
 //     duration: 200,
@@ -13,39 +14,12 @@ window.sr = ScrollReveal();
 //     distance: '100px' 
 // });
 
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 15, 2020 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
+//side scroll
 
 window.scrollConverter = (function (window, document, undefined) {
 
-  // Private vars
+  
   var docElem = document.documentElement,
     active = false,
     hasDeactivated = false,
@@ -54,10 +28,8 @@ window.scrollConverter = (function (window, document, undefined) {
   var mouseWheelHandler;
   var scrollHandler;
   
-  // Private methods
   var scrollCallback = function (offset, event, callback) {
   
-      // Abort the scrolling if it's inactive
       if (!active) {
         return true;
       }
@@ -65,58 +37,42 @@ window.scrollConverter = (function (window, document, undefined) {
       var delta, numPixelsPerStep, change, newOffset,
         docOffset, scrollWidth, winWidth, maxOffset;
   
-      // Set scrolling parameters
       delta = 0;
       numPixelsPerStep = 10;
   
-      // Find the maximum offset for the scroll
       docOffset = (docElem ? docElem.offsetWidth : 0) || 0;
       scrollWidth = document.body.scrollWidth || 0;
       winWidth = docElem ? docElem.clientWidth : 0;
       maxOffset = Math.max(docOffset, scrollWidth) - winWidth;
-  
-      // Chrome and Safari seem to get interference when scrolling horizontally
-      // with a trackpad, so if the scroll is horizontal we just ignore it here
-      // and let the browser scroll like normal. These properties don't exist in
-      // all browsers, but it also seems to work fine in other browsers, so this
-      // is fine.
+ 
       if (Math.abs(event.wheelDeltaX) > Math.abs(event.wheelDeltaY)) {
         return true;
       }
   
-      // "Normalize" the wheel value across browsers
-      //  The delta value after this will not be the same for all browsers.
-      //  Instead, it is normalized in a way to try to give a pretty similar feeling in all browsers.
-      // 
-      //  Firefox and Opera
+  
       if (event.detail) {
         delta = event.detail * -240;
       }
-      // IE, Safari and Chrome
+      
       else if (event.wheelDelta) {
         delta = event.wheelDelta * 5;
       }
   
-      // Get the real offset change from the delta
-      //  A positive change is when the user scrolled the wheel up (in regular scrolling direction)
-      //  A negative change is when the user scrolled the wheel down
+      
       change = delta / 120 * numPixelsPerStep;
       newOffset = offset.x - change;
   
-      // Do the scroll if the new offset is positive
       if (newOffset >= 0 && newOffset <= maxOffset) {
         offset.x = newOffset;
         offset.setByScript = true;
         window.scrollTo(offset.x, offset.y);
       }
-      // Keep the offset within the boundaries
       else if (offset.x !== 0 && offset.x !== maxOffset) {
         offset.x = newOffset > maxOffset ? maxOffset : 0;
         offset.setByScript = true;
         window.scrollTo(offset.x, offset.y);
       }
   
-      // Fire the callback
       if (typeof callback === "function") {
         callback(offset);
       }
@@ -144,7 +100,6 @@ window.scrollConverter = (function (window, document, undefined) {
         scrollValue = "scroll" + axis,
         scrollDir = "scroll" + (axis === "X" ? "Left" : "Top");
   
-      // Get the scroll offset for all browsers
       return window[pageOffset] || window[scrollValue] || (function () {
         var rootElem = document.documentElement || document.body.parentNode;
         return ((typeof rootElem[scrollDir] === "number") ? rootElem : document.body)[scrollDir];
@@ -155,13 +110,10 @@ window.scrollConverter = (function (window, document, undefined) {
   
       var callback = function (e) {
   
-          // Fix event object for IE8 and below
           e = e || window.event;
   
-          // Trigger the scroll behavior
           var shouldPreventDefault = scrollCallback(offset, e, cb) === false;
   
-          // Prevent the normal scroll action to happen
           if (shouldPreventDefault) {
             if (e.preventDefault && e.stopPropagation) {
               e.preventDefault();
@@ -174,7 +126,6 @@ window.scrollConverter = (function (window, document, undefined) {
   
         updateOffsetOnScroll = function () {
   
-          // Update the offset variable when the normal scrollbar is used
           if (!offset.setByScript) {
             offset.x = getOffset("x");
             offset.y = getOffset("y");
@@ -185,24 +136,20 @@ window.scrollConverter = (function (window, document, undefined) {
       mouseWheelHandler = callback;
       scrollHandler = updateOffsetOnScroll;
   
-      // Safari, Chrome, Opera, IE9+
       if (window.addEventListener) {
         var useCaptureOrOptions = supportsEventListenerPassiveOption()
           ? { capture: false, passive: false }
           : false;
   
-        // Safari, Chrome, Opera, IE9
         if ("onmousewheel" in window) {
           window.addEventListener("mousewheel", mouseWheelHandler, useCaptureOrOptions);
           window.addEventListener("scroll", scrollHandler, useCaptureOrOptions);
         }
-        // Firefox
         else {
           window.addEventListener("DOMMouseScroll", mouseWheelHandler, useCaptureOrOptions);
           window.addEventListener("scroll", scrollHandler, useCaptureOrOptions);
         }
       }
-      // IE8 and below
       else {
         document.attachEvent("onmousewheel", mouseWheelHandler);
         window.attachEvent("onscroll", scrollHandler);
@@ -212,24 +159,20 @@ window.scrollConverter = (function (window, document, undefined) {
     unbindEvents = function () {
       if (!mouseWheelHandler && !scrollHandler) return;
   
-      // Safari, Chrome, Opera, IE9+
       if (window.removeEventListener) {
         var useCaptureOrOptions = supportsEventListenerPassiveOption()
           ? { capture: false, passive: false }
           : false;
   
-        // Safari, Chrome, Opera, IE9
         if ("onmousewheel" in window) {
           window.removeEventListener("mousewheel", mouseWheelHandler, useCaptureOrOptions);
           window.removeEventListener("scroll", scrollHandler, useCaptureOrOptions);
         }
-        // Firefox
         else {
           window.removeEventListener("DOMMouseScroll", mouseWheelHandler, useCaptureOrOptions);
           window.removeEventListener("scroll", scrollHandler, useCaptureOrOptions);
         }
       }
-      // IE8 and below
       else {
         document.detachEvent("onmousewheel", mouseWheelHandler);
         window.detachEvent("onscroll", scrollHandler);
@@ -242,24 +185,19 @@ window.scrollConverter = (function (window, document, undefined) {
       return false;
     };
   
-  // Return a public API
   return {
   
-    // Activate the scrolling switch
-    //  An optional callback can be passed in, which will fire at every scroll update
+    
     activate: function (callback) {
   
-      // Set state
       active = true;
   
-      // Bind events if it hasn't been done before
       if (!eventsBound) {
         var offset = { x: 0, y: 0 };
         bindEvents(offset, callback);
         eventsBound = true;
       }
   
-      // Remove event handlers if it was previously deactivated
       if (hasDeactivated) {
         if (window.addEventListener) {
           var useCaptureOrOptions = supportsEventListenerPassiveOption()
@@ -284,11 +222,9 @@ window.scrollConverter = (function (window, document, undefined) {
   
     deactivateAllScrolling: function () {
   
-      // Set state
       active = false;
       hasDeactivated = true;
   
-      // Bind event handlers to disable the scroll
       if (window.addEventListener) {
         var useCaptureOrOptions = supportsEventListenerPassiveOption()
           ? { capture: true, passive: false }
