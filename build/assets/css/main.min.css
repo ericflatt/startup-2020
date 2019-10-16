@@ -259,6 +259,23 @@ body {
   width: 5000px;
   position: absolute; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid #1F3EF3; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; }
+
 .page {
   width: 520px;
   padding: 0px;
