@@ -311,12 +311,13 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  font-size: 21px; }
+  font-size: 18px; }
 
 .textContainer {
   width: 60vw;
   height: 60vh;
-  margin: auto; }
+  margin: auto;
+  font-family: 'gt-mono'; }
 
 .pageThree {
   width: 100vw;
