@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -255,7 +256,8 @@ input[type="button"] {
 
 body {
   background-color: white;
-  font-family: 'gt';
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #1F3EF3;
   width: 5000px;
   position: absolute; }
 
@@ -305,6 +307,32 @@ body {
   grid-row-gap: 0px;
   height: 100vh; }
 
+.pageTwo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-size: 28px; }
+
+.textContainer {
+  width: 60vw;
+  height: 60vh;
+  margin: auto; }
+
+.pageThree {
+  width: 100vw;
+  height: 100vh;
+  display: flex; }
+
+.picContainer {
+  margin: auto;
+  display: flex; }
+
+.picContainer img {
+  width: 60%;
+  height: 60%;
+  padding-right: 60px;
+  pointer-events: none; }
+
 .heroGif {
   width: 100%;
   margin: auto;
@@ -319,6 +347,11 @@ body {
     left: 0;
     right: 0;
     padding: 0; } }
+
+.centered {
+  font-size: 15px;
+  position: absolute;
+  padding-left: 100px; }
 
 .whatIs {
   position: relative;
