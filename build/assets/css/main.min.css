@@ -271,6 +271,12 @@ body {
   font-family: gt;
   src: url(../build/gt-america-trial-expanded-bold-webfont.woff); }
 
+#countdown {
+  font-size: 14px;
+  font-family: 'gt-mono';
+  text-align: center;
+  color: #1F3EF3; }
+
 #hero {
   height: 100vh;
   background-repeat: no-repeat; }
@@ -329,6 +335,26 @@ body {
   font-size: 15px;
   position: absolute;
   padding-left: 100px; }
+
+.whatIs {
+  position: relative;
+  top: 0%;
+  left: 25%;
+  font-family: 'gt-mono';
+  font-size: 14px;
+  color: #1F3EF3;
+  font-weight: 400;
+  align-items: center;
+  float: left;
+  margin-right: 150px; }
+
+.textWithArrow {
+  display: flex;
+  align-items: center; }
+
+.rightArrow {
+  align-self: center;
+  width: 60px; }
 
 .title {
   z-index: 999;
