@@ -4,6 +4,8 @@ if (screen.width <= 768) {
 document.location = "https://google.com";
 }
 
+//laxx js
+
 //countdown timer
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 8, 2020 11:00:00").getTime();
