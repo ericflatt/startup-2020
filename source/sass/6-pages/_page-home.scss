@@ -71,13 +71,48 @@ body{
   width: 100vw;
   height: 100vh;
   display: flex;
-  font-size: 18px;
-  
+  font-size: 18px;  
+}
+
+
+.textWithArrow{
+  display: flex;
+  align-items: center;
+}
+
+.rightArrow{
+  align-self: center;
+  width: 60px;
+}
+
+.leftArrow{
+  align-self: center;
+  width: 60px;
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.homeArrow{
+  font-family: 'gt-mono';
+  font-size: 14px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+}
+
+.home{
+  align-self: center;
 }
 
 .textContainer{
   width: 60vw;
-  height: 60vh;
   margin: auto;
   font-family: 'gt-mono';
 }
@@ -138,15 +173,7 @@ body{
   margin-right: 150px;
 }
 
-.textWithArrow{
-  display: flex;
-  align-items: center;
-}
 
-.rightArrow{
-  align-self: center;
-  width: 60px;
-}
 
 .title{
   z-index: 999;
