@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.min.css" />
     
 </head>
-<body> 
+<body class="body"> 
   <style>
     @font-face {
       font-family: 'gt-bold';
@@ -58,26 +58,20 @@
 
 <div class="page pageThree">
     <div class="picContainer">
-      <img src="./assets/img/pics/1.png" alt="">
-      <img src="./assets/img/pics/2.png" alt="">
-      <img src="./assets/img/pics/3.png" alt="">
-      <img src="./assets/img/pics/4.png" alt="">
-      <img src="./assets/img/pics/5.png" alt="">
+      <img src="./assets/img/pics/1.png" alt="pic">
+      <img src="./assets/img/pics/2.png" alt="pic">
+      <img src="./assets/img/pics/3.png" alt="pic">
+      <img src="./assets/img/pics/4.png" alt="pic">
+      <img src="./assets/img/pics/5.png" alt="pic">
     </div>
 </div>
   
 
 
+
 <script>
-window.onload = function() {
-	lax.setup() // init
-
-	const updateLax = () => {
-		lax.update(window.scrollX)
-		window.requestAnimationFrame(updateLax)
-	}
-
-	window.requestAnimationFrame(updateLax)
+if (screen.width <= 768) {
+document.location = "mobile.html";
 }
 </script>
 

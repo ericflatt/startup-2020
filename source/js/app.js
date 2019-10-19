@@ -1,7 +1,7 @@
 //mobile redirect
 //mobile only site will be built
 if (screen.width <= 768) {
-document.location = "https://google.com";
+document.location = "mobile.html";
 }
 
 
