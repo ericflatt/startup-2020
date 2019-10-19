@@ -4,7 +4,33 @@ if (screen.width <= 768) {
 document.location = "https://google.com";
 }
 
-//laxx js
+
+//anime
+
+var animation = anime({
+  targets: '.textContainer',
+  translateY: -400,
+  delay: 1000,
+  opacity: -0.5,
+  easing: 'linear',
+  autoplay: false,
+});
+
+
+var scrollPos;
+
+$(window).scroll(function(){
+  var scrollPos = $(document).scrollLeft();
+  var docWidth = $(document).width();
+  var animationNum = scrollPos / docWidth;
+  animation.seek((animation.duration * (animationNum / .19)/2));
+  console.log(animationNum/.19);
+});
+
+
+
+
+
 
 //countdown timer
 // Set the date we're counting down to

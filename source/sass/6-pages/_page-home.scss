@@ -99,6 +99,8 @@ body{
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left:25px;
+  padding-right:20px;
   height: 100vh;
   background-color: white;
   z-index: 9999;
@@ -121,6 +123,8 @@ body{
   width: 100vw;
   height: 100vh;
   display: flex;
+  z-index: -1;
+  margin-left: 300px
 }
 
 .picContainer{
@@ -140,6 +144,12 @@ body{
   width: 100%;
   margin: auto;
   align-items: center;
+}
+
+.sticky {
+  position: sticky;
+  z-index: 0;
+  left: 0;
 }
 
 @media only screen and (max-width: 768px) {
