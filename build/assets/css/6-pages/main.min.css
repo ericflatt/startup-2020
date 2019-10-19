@@ -1,0 +1,12 @@
+#hero {
+  height: 100vh;
+  background-color: white; }
+
+.hero-gif {
+  width: 100%;
+  padding: 10%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%); }

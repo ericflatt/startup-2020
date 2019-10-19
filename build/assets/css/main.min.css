@@ -254,29 +254,27 @@ input[type="button"] {
   width: 100%;
   left: 0; }
 
-body {
+.body {
   background-color: white;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #1F3EF3;
   width: 5000px;
   position: absolute; }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent; }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: 2px solid #1F3EF3; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: transparent; }
+@media only screen and (min-width: 768px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px; }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 2px solid #1F3EF3; }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent; } }
 
 .page {
   width: 520px;
@@ -447,3 +445,16 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 18px; }
+
+#hero {
+  height: 100vh;
+  background-color: white; }
+
+.hero-gif {
+  width: 100%;
+  padding: 10%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%); }

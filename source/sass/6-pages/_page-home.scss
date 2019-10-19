@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
-body{
+.body{
   background-color: white;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #1F3EF3;
   width: 5000px;
   position: absolute;
 }
+@media only screen and (min-width: 768px) {
+  
 
 //scrollbar
 /* width */
@@ -28,6 +30,8 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: transparent; 
+}
+
 }
 
 .page {
@@ -186,8 +190,10 @@ body{
 @media only screen and (max-width: 768px) {
   .title{
     font-size: 10px;  
+  }
 }
-}
+
+
 
 .centeredText{
   position: absolute;
