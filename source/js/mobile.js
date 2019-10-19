@@ -33,3 +33,4 @@ var x = setInterval(function() {
     document.getElementById("mobileCountdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+

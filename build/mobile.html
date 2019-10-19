@@ -20,17 +20,65 @@
     }
     </style>
 
-<section id="hero">
+<section  class="" id="hero">
     <div>
         <img class="hero-gif" src="./assets/img/gif-final.gif" alt="gif">
-        <p id="mobileCountdown"></p>
     </div>
     <div>
-            <p id="mobileCountdown"></p>
+        <p id="mobileCountdown"></p>
     </div>
 </section>
-  
 
+<section class="heroGrid" id="paragraphMobile">
+    <div></div>
+    <div>
+            <p>StartUp is an annual event hosted by FLUX, the UX club at SCAD, in collaboration with SCADpro. Students compete in teams of 2-5 people in a week-long design sprint. The task is to come up with a product or service concept based on a theme that will be given on the first day of the event. Each team will have to deliver their concept in a form of a pitch and present to a board of judges. At the same time, students will receive hands-on mentorship from industry professionals. This past year, we had over 200 participants, in 47 teams and 26 different majors - our biggest one yet!</p>
+    </div>
+
+    <div></div>
+</section>
+
+<section id="photosMobile">
+        <div class="picContainerMobile">
+                <img src="./assets/img/pics/1.png" alt="pic">
+                <img src="./assets/img/pics/2.png" alt="pic">
+                <img src="./assets/img/pics/3.png" alt="pic">
+                <img src="./assets/img/pics/4.png" alt="pic">
+                <img src="./assets/img/pics/5.png" alt="pic">
+              </div>
+</section>
+  
+<script>
+  //countdown timer
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 8, 2020 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="countdown"
+  document.getElementById("mobileCountdown").innerHTML = days + " days, " + hours + " hours, "
+  + minutes + " minutes, " + seconds + " seconds";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("mobileCountdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/mobile.js"></script>
 </body>

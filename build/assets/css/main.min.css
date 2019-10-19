@@ -458,3 +458,35 @@ input[type="button"] {
   left: 0%;
   transform: translate(0%, -50%);
   -webkit-transform: translate(0%, -50%); }
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+
+#mobileCountdown {
+  font-family: 'gt-mono';
+  color: #1F3EF3;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 35px;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0; }
+
+#paragraphMobile {
+  height: 100vh;
+  font-family: 'gt-mono';
+  color: #1F3EF3;
+  font-size: 12px;
+  padding: 8%; }
+
+.picContainerMobile img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 5%;
+  pointer-events: none; }
