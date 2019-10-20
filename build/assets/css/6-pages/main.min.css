@@ -42,3 +42,19 @@
   margin-right: auto;
   padding: 2% 5%;
   pointer-events: none; }
+
+.mobileLogo {
+  width: 20%;
+  margin-bottom: 8px; }
+
+.blueLineMobile {
+  width: 100%; }
+
+.paragraphMobile {
+  border-bottom: 1px solid #1F3EF3;
+  padding-bottom: 30px; }
+
+.infoLineMobile {
+  width: 100%;
+  font-size: 11px;
+  margin-right: 11px; }
