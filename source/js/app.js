@@ -5,6 +5,7 @@ document.location = "mobile.html";
 }
 
 
+
 //anime
 
 //var animation = anime({
