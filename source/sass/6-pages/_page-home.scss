@@ -7,6 +7,13 @@
   width: 5000px;
   position: absolute;
 }
+
+@media only screen and (min-width: 1500px) {
+  .body{
+    width: 10000px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   
 
@@ -90,6 +97,8 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-content: center;
   font-size: 18px;  
 }
 
@@ -202,7 +211,11 @@
   margin-right: 150px;
 }
 
-
+@media only screen and (min-width: 1500px) {
+  .whatIs{
+    margin-right: 300px;
+  }
+}
 
 .title{
   z-index: 999;
