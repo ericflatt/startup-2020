@@ -425,7 +425,7 @@ input[type="button"] {
 
 @media only screen and (min-width: 1500px) {
   .whatIs {
-    margin-right: 300px; } }
+    left: 20%; } }
 
 .title {
   z-index: 999;
