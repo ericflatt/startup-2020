@@ -58,3 +58,12 @@
   width: 100%;
   font-size: 11px;
   margin-right: 11px; }
+
+.picCred {
+  position: absolute;
+  font-family: 'gt-mono';
+  font-size: 18px;
+  opacity: 0; }
+
+.picture:hover + .picCred {
+  opacity: 1; }

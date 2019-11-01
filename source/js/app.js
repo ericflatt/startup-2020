@@ -1,3 +1,29 @@
+//big hover time
+$(document).bind('mousemove', function(e){
+  $('.pc1').css({
+      left: e.pageX + 15,
+      top: e.pageY - 20
+  });
+  $('.pc2').css({
+    left: e.pageX + 15,
+    top: e.pageY - 20
+  });
+  $('.pc3').css({
+    left: e.pageX + 15,
+    top: e.pageY - 20
+  });
+  $('.pc4').css({
+    left: e.pageX + 15,
+    top: e.pageY - 20
+  });
+  $('.pc5').css({
+    left: e.pageX + 15,
+    top: e.pageY - 20
+  });
+
+});
+
+
 //mobile redirect
 //mobile only site will be built
 if (screen.width <= 768) {

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .body{
   background-color: white;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -164,7 +168,6 @@
   width: 60%;
   height: 60%;
   padding-right: 60px;
-  pointer-events: none; // <-- you can get rid of this if you want. it just disables dragging images
 }
 
 
@@ -283,4 +286,15 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 18px;
+}
+
+.picCred {
+  position: absolute;
+  font-family: 'gt-mono';
+  font-size: 18px;
+  opacity:0;
+}
+
+.picture:hover + .picCred {
+  opacity: 1;
 }
