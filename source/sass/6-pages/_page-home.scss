@@ -1,301 +1,237 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
-
-html {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.body{
-  background-color: white;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #1F3EF3;
-  width: 5000px;
-  position: absolute;
-}
-
-
-@media only screen and (min-width: 1500px) {
-  .body{
-    width: 10000px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  
-
-//scrollbar
-/* width */
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: transparent; 
-  border: 2px solid #1F3EF3;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: transparent; 
-}
-
-}
-
-.page {
-	width: 520px;
-	padding: 0px;
-	background: #fff;
-	float: left;
-}
-
 @font-face {
   font-family: gt;
   src: url(../build/gt-america-trial-expanded-bold-webfont.woff);
 }
 
-#countdown{
-  font-size: 14px;
-  font-family: 'gt-mono';
-  text-align: center;
-  color: #1F3EF3;
-}
 
-
-.startupLogo{
-  padding: 0;
-  margin: 0;
-  width: 10%;
-  margin-bottom: 10px;
-}
-
-.blueLine{
+.contentContainer {
+  // background-color: Red;
+  max-width: 1088px;
   width: 100%;
+  margin: auto;
+  @media only screen and (max-width: 1200px) {
+    width: 85%;
+  }
 }
 
-.infoLine{
-  width: 100%;
-  font-size: 14px;
-  margin-right: 45px;
+.heroContainer {
+  display: flex;
+  flex-direction: column;
 }
 
-#hero{
-  height: 100vh;
-  background-repeat: no-repeat;
-}
-
-.pageOne{
+.heroSection {
   width: 100vw;
+  height: 100vh;
+  // background-color: blue;
+}
+
+.startupLogo {
+  width: 50%;
+  margin: auto;
+}
+
+.heroMore {
+  margin: auto;
+  font-family: 'gt-mono';
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.downArrow {
+  margin: auto;
+}
+
+.aboutSection {
+  width: 100vw;
+  height: 80vh;
+  // background-color: green;
+}
+
+.aboutContainer {
+  margin-top: 20px
+}
+
+.QuestionsSection {
+  width: 100vw;
+  height: 290vh;
+  // background-color: purple;
+}
+
+h1 {
+  font-family: 'gt-bold';
+  font-size: 60px;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'gt-mono';
+  font-size: 21px;
+}
+
+p {
+    font-family: 'gt-mono';
+    font-size: 15px;
+}
+
+.aboutDescContainer {
+  width: 50%;
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+
+.questionsTop {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: 100vh;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 
-.pageTwo{
+.questionsTitle {
+  text-align: right;
+  line-height: 1.3em;
+  height: 100%;
+  margin-top: 20%; // <--please help, no idea how to get the title to align to the bottom of the div :(
+}
+
+.questionTitleContainer {
+  // background-color: yellow;
+  grid-column: none;
+}
+
+.questionsContainer {
+  width: 75%;
+  p {
+    margin-bottom: 60px;
+  }
+}
+
+.SignupSection {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-size: 18px;  
+  height: 60vh;
+  // background-color: darkcyan;
 }
 
-
-.textWithArrow{
-  display: flex;
-  align-items: center;
-}
-
-.rightArrow{
-  align-self: center;
-  width: 60px;
-}
-
-.leftArrow{
-  align-self: center;
-  width: 60px;
-  padding: 0;
-  margin: 0;
-  margin-right: 30px;
-}
-
-.homeArrow{
+//brutalizing buttons >:)
+button {
+  margin-top: 30px;
   font-family: 'gt-mono';
-  font-size: 14px;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-left:25px;
-  padding-right:20px;
+  font-weight: 500;
+  text-transform: none;
+  font-size: 16px;
+  width: 390px;
+  height: 61px;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.contactFormContainer{
+  position: fixed;
+  z-index: 1000;
   height: 100vh;
-  background-color: white;
-  z-index: 9999;
-  position: -webkit-sticky;
-  position: sticky;
-  left: 0;
-}
-
-.home{
-  align-self: center;
-}
-
-.textContainer{
-  width: 60vw;
-  margin: auto;
-  font-family: 'gt-mono';
-}
-
-.pageThree{
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  z-index: -1;
-  margin-left: 300px
+  background-color: rgba(0, 0, 0, 0.548);
 }
 
-.picContainer{
-  margin: auto;
-  display: flex;
-}
-
-.picContainer img {
-  width: 60%;
-  height: 60%;
-  padding-right: 60px;
-}
-
-
-.heroGif{
-  width: 100%;
-  margin: auto;
-  align-items: center;
-}
-
-.sticky {
-  position: sticky;
-  z-index: 0;
-  left: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .heroGif{
-  width: 100%;
-  position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-  }
-}
-
-//yeah sorry
-.centered{
-  font-size: 15px;
-  position: absolute;
-  padding-left: 100px;
-}
-.whatIs{
-  position: relative;
-  top: 0%;
-  left: 25%;
-  font-family: 'gt-mono';
-  font-size: 14px;
-  color: #1F3EF3;
-  font-weight: 400;
-  align-items: center;
-  float: left;
-  margin-right: 150px;
-}
-
-@media only screen and (min-width: 1500px) {
-  .whatIs{
-    left: 20%;
-  }
-}
-
-.title{
-  z-index: 999;
-  text-align: center;
-  
-  left: 50%;
-  transform: translateY(-50%);
-}
-
-@media only screen and (max-width: 768px) {
-  .title{
-    font-size: 10px;  
-  }
-}
-
-
-
-.centeredText{
-  position: absolute;
-  font-size: 18px;
-  left: 35vw;
-  top: 45%;
-}
-
-
-#hero2{
-  height: 100vh;
-  background-repeat: no-repeat;
-  
-}
-
-.heroGif2{
-  width: 40%;
-  margin: 0 auto;
-  position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .heroGif2{
-  width: 100%;
-  position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-}
-}
-
-@media only screen and (max-width: 768px) {
-  .title2{
-    font-size: 10px;  
-}
-}
-
-.centeredText2{
-  position: absolute;
+.contactForm{
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 18px;
+  height: 80%;
+  width: 60%;
+  background-color: white;
+  border: 4px solid black;
+  box-sizing: border-box;
 }
 
-.picCred {
-  position: absolute;
-  font-family: 'gt-mono';
-  font-size: 18px;
-  opacity:0;
+.contactForm h1, .contactFirstRow, .contactSecondRow, .contactThirdRow, .contactFourthRow {
+  margin: auto;
+  width: 90%;
+  input, textarea {
+    width: 100%;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "gt-mono";
+    height: 2em;
+  }
+  p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
 }
 
-.picture:hover + .picCred {
-  opacity: 1;
+.contactForm span {
+  color:red;
+}
+
+.contactForm h1 {
+  margin-top: 50px;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.contactSecondRow {
+  display: flex;
+  div {
+    width: 100%;
+  }
+}
+
+.contactLeft {
+  margin-right: 20px;
+}
+
+.contactFourthRow {
+  display: flex;
+  button {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 180px;
+    padding: 20px;
+  }
+}
+
+.contactThirdRow {
+  textarea{
+    height: 120px;
+    resize: none;
+    font-size: 13px;
+  }
+}
+
+.cancelButton {
+  color:black;
+  background-color: white;
+}
+
+.contactFormContainer {
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.contactTitle {
+  line-height: 1.3em;
+}
+
+footer {
+  width: 100vw;
+  height: 40vh;
+  // background: brown;
+  div {
+    margin:auto;
+    width: 280px;
+    text-align: center;
+    margin-top: 100px;
+  }
 }
