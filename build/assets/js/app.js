@@ -1,1 +1,1 @@
-$(function(){$("#contactButton").click(function(){$(".contactFormContainer").addClass("active")}),$(".cancelButton").click(function(){$(".contactFormContainer").removeClass("active")})});
+$(function(){$("#contactButton").click(function(){$(".contactFormContainer").addClass("active")}),$(".cancelButton").click(function(){$(".contactFormContainer").removeClass("active")})}),$("#nav").onePageNav({currentClass:"current",changeHash:!1,scrollSpeed:750,scrollThreshold:.5,filter:"",easing:"swing",begin:function(){},end:function(){},scrollChange:function(n){}});

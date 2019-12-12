@@ -3,6 +3,53 @@
   src: url(../build/gt-america-trial-expanded-bold-webfont.woff);
 }
 
+::selection {
+  background: #E37CE2;
+}
+
+body {
+  width: 100vw;
+}
+
+
+nav {
+  position: fixed;
+  height: 50px;
+  width: 350px;
+  display: flex;
+  top: 30px;
+  left: 70px;
+  background-color: white;
+  border: 2px solid black;
+  div {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      font-family: 'gt-mono';
+      color: black;
+      font-weight: 600;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+
+.current {
+  background-color: black;
+  a{
+    color: white;
+  }
+
+}
+
 
 .contentContainer {
   // background-color: Red;
@@ -28,6 +75,13 @@
 .startupLogo {
   width: 50%;
   margin: auto;
+  @media only screen and (max-width: 1150px) {
+  width: 60%;
+  }
+  @media only screen and (max-width: 700px) {
+    margin-top:200px;
+    width: 70%;
+    }
 }
 
 .heroMore {
@@ -45,6 +99,7 @@
 .aboutSection {
   width: 100vw;
   height: 80vh;
+  min-height: 600px;
   // background-color: green;
 }
 
@@ -55,6 +110,7 @@
 .QuestionsSection {
   width: 100vw;
   height: 290vh;
+  min-height: 1900px;
   // background-color: purple;
 }
 
@@ -63,22 +119,67 @@ h1 {
   font-size: 60px;
   line-height: 1em;
   margin-bottom: 20px;
+  @media only screen and (max-width: 1150px) {
+    font-size: 55px
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 48px;
+  }
+  @media only screen and (max-width: 900px) {
+    font-size: 44px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 41px;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 35px;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 35px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 32px;
+  }
 }
 
 h2 {
   font-family: 'gt-mono';
   font-size: 21px;
+  @media only screen and (max-width: 1150px) {
+  font-size: 19px;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 17px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 }
 
 p {
     font-family: 'gt-mono';
     font-size: 15px;
+    @media only screen and (max-width: 1000px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 13px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 14px;
+    }
 }
 
 .aboutDescContainer {
   width: 50%;
   p {
     margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 }
 
@@ -91,11 +192,43 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
+.questionMark {
+  @media only screen and (max-width: 1150px) {
+  width: calc(182px * 0.8);
+  height: calc(293px * 0.8);
+  }
+  @media only screen and (max-width: 1000px) {
+    width: calc(182px * 0.65);
+    height: calc(293px * 0.65);
+  }
+  @media only screen and (max-width: 800px) {
+    width: calc(182px * 0.5);
+    height: calc(293px * 0.5);
+  }
+  @media only screen and (max-width: 600px) {
+    width: calc(182px * 0.3);
+    height: calc(293px * 0.3);
+  }
+}
+
 .questionsTitle {
   text-align: right;
   line-height: 1.3em;
   height: 100%;
   margin-top: 20%; // <--please help, no idea how to get the title to align to the bottom of the div :(
+  @media only screen and (max-width: 1150px) {
+    margin-top: 16%;
+  }
+  @media only screen and (max-width: 1000px) {
+    margin-top: 12%;
+  }
+  @media only screen and (max-width: 1000px) {
+    margin-top: 10%;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: 0%;
+  }
+
 }
 
 .questionTitleContainer {
@@ -107,6 +240,9 @@ grid-row-gap: 0px;
   width: 75%;
   p {
     margin-bottom: 60px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 }
 
@@ -131,6 +267,12 @@ button {
   border: none;
 }
 
+#contactButton:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
 .contactFormContainer{
   position: fixed;
   z-index: 1000;
@@ -149,6 +291,12 @@ button {
   background-color: white;
   border: 4px solid black;
   box-sizing: border-box;
+  @media only screen and (max-width: 900px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 }
 
 .contactForm h1, .contactFirstRow, .contactSecondRow, .contactThirdRow, .contactFourthRow {
@@ -161,6 +309,10 @@ button {
     padding: 10px;
     font-family: "gt-mono";
     height: 2em;
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+      padding: 15px;
+    }
   }
   p {
     font-size: 13px;
@@ -233,5 +385,16 @@ footer {
     width: 280px;
     text-align: center;
     margin-top: 100px;
+
   }
+}
+
+.smiley {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
+}
+
+.smiley:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
