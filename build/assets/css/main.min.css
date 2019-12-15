@@ -288,7 +288,8 @@ nav {
   @media only screen and (max-width: 500px) {
     nav {
       left: 50%;
-      transform: translateX(-50%); } }
+      transform: translateX(-60%);
+      width: 300px; } }
 
 .current {
   background-color: black; }
@@ -310,6 +311,54 @@ nav {
 .heroSection {
   width: 100vw;
   height: 100vh; }
+
+.pictures {
+  background-image: url("../img/pictures.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  margin-top: 110vh;
+  min-height: 800px;
+  height: auto;
+  width: 100vw; }
+  @media only screen and (max-width: 700px) {
+    .pictures {
+      display: none; } }
+  @media only screen and (min-width: 1400px) {
+    .pictures {
+      background-position: right; } }
+
+.BG1 {
+  background-image: url("../img/TopBG.png");
+  background-size: cover;
+  position: absolute;
+  z-index: -10000;
+  min-height: 800px;
+  height: 80vw;
+  width: 100vw; }
+
+.BG2 {
+  background-image: url("../img/BottomBG.png");
+  background-size: cover;
+  position: absolute;
+  z-index: -10000;
+  margin-top: 850px;
+  min-height: 800px;
+  height: 3200px;
+  width: 100vw; }
+  @media only screen and (min-width: 1000px) {
+    .BG2 {
+      margin-top: 950px; } }
+  @media only screen and (min-width: 1250px) {
+    .BG2 {
+      margin-top: 1050px; } }
+  @media only screen and (min-width: 1400px) {
+    .BG2 {
+      margin-top: 1150px; } }
+  @media only screen and (max-width: 500px) {
+    .BG2 {
+      height: 3700px; } }
 
 .startupLogo {
   width: 50%;
@@ -336,6 +385,9 @@ nav {
   width: 100vw;
   height: 80vh;
   min-height: 600px; }
+  @media only screen and (max-width: 500px) {
+    .aboutSection {
+      min-height: 700px; } }
 
 .aboutContainer {
   margin-top: 20px; }
@@ -344,6 +396,9 @@ nav {
   width: 100vw;
   height: 290vh;
   min-height: 1900px; }
+  @media only screen and (max-width: 500px) {
+    .QuestionsSection {
+      min-height: 2400px; } }
 
 h1 {
   font-family: 'gt-bold';

@@ -19,32 +19,37 @@
     }
     </style>
     <!-- gonna use formspree for this -->
+    <div class="pictures"></div>
+    <div class="BG1"></div>
+    <div class="BG2"></div>
     <div class="contactFormContainer">
       <div class="contactForm">
         <h1>Contact us</h1>
+        <form action="https://formspree.io/xeqoyzyp" method="POST">
         <div class="contactFirstRow">
             <p>Full name<span>*</span></p>
-            <input type="text">
+            <input type="text" name="Full Name" required>
         </div>
         <div class="contactSecondRow">
           <div class="contactLeft">
               <p>Student ID Number<span>*</span></p>
-              <input type="text">
+              <input type="text" name="Student ID Number" required>
           </div>
           <div class="contactRight">
               <p>SCAD email<span>*</span></p>
-              <input type="text">
+              <input type="text" name="SCAD Email" required>
           </div>
         </div>
         <div class="contactThirdRow">
             <p>Message<span>*</span></p>
-            <textarea></textarea>
+            <textarea name="Message" required></textarea>
         </div>
         <div class="contactFourthRow">
             <button>Send</button>
             <button class="cancelButton">Cancel</button>
         </div>
       </div>
+    </form>
     </div>
   
     <nav id="nav">
