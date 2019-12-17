@@ -337,6 +337,10 @@ nav {
   min-height: 800px;
   height: 80vw;
   width: 100vw; }
+  @media only screen and (min-width: 1400px) {
+    .BG1 {
+      background-size: contain;
+      background-repeat: no-repeat; } }
 
 .BG2 {
   background-image: url("../img/BottomBG.png");
@@ -359,10 +363,17 @@ nav {
   @media only screen and (max-width: 500px) {
     .BG2 {
       height: 3700px; } }
+  @media only screen and (min-height: 800px) {
+    .BG2 {
+      height: 3600px; } }
+  @media only screen and (min-height: 950px) {
+    .BG2 {
+      height: 3800px; } }
 
 .startupLogo {
   width: 50%;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: -5vw; }
   @media only screen and (max-width: 1150px) {
     .startupLogo {
       width: 60%; } }
@@ -370,6 +381,9 @@ nav {
     .startupLogo {
       margin-top: 200px;
       width: 70%; } }
+  @media only screen and (min-width: 1500px) {
+    .startupLogo {
+      width: 60%; } }
 
 .heroMore {
   margin: auto;
@@ -395,13 +409,14 @@ nav {
 .QuestionsSection {
   width: 100vw;
   height: 290vh;
-  min-height: 1900px; }
+  min-height: 1900px;
+  max-height: 2000px; }
   @media only screen and (max-width: 500px) {
     .QuestionsSection {
       min-height: 2400px; } }
 
 h1 {
-  font-family: 'gt-bold';
+  font-family: 'gt-black';
   font-size: 60px;
   line-height: 1em;
   margin-bottom: 20px; }
@@ -522,7 +537,8 @@ p {
 
 .SignupSection {
   width: 100vw;
-  height: 60vh; }
+  height: 60vh;
+  max-height: 500px; }
 
 button {
   margin-top: 30px;
@@ -642,3 +658,6 @@ footer {
 .smiley:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg); }
+
+.whatIs {
+  margin-top: 100px; }

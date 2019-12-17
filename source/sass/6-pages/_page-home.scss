@@ -99,6 +99,10 @@ nav {
   min-height: 800px;
   height: 80vw;
   width: 100vw;
+  @media only screen and (min-width: 1400px) {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
 }
 
@@ -123,18 +127,29 @@ nav {
   @media only screen and (max-width: 500px) {
     height: 3700px;
   }
+  @media only screen and (min-height: 800px) {
+    height: 3600px;
+  }
+  @media only screen and (min-height: 950px) {
+    height: 3800px;
+  }
 
 }
 
 .startupLogo {
   width: 50%;
   margin: auto;
+  // margin-top: 5vw;
+  margin-bottom: -5vw;
   @media only screen and (max-width: 1150px) {
-  width: 60%;
+    width: 60%;
   }
   @media only screen and (max-width: 700px) {
     margin-top:200px;
     width: 70%;
+  }
+  @media only screen and (min-width: 1500px) {
+    width: 60%;
     }
 }
 
@@ -168,14 +183,18 @@ nav {
   width: 100vw;
   height: 290vh;
   min-height: 1900px;
+  max-height: 2000px;
   @media only screen and (max-width: 500px) {
   min-height: 2400px;
   }
+  // @media only screen and (min-height: 824px) {
+
+  // }
   // background-color: purple;
 }
 
 h1 {
-  font-family: 'gt-bold';
+  font-family: 'gt-black';
   font-size: 60px;
   line-height: 1em;
   margin-bottom: 20px;
@@ -309,6 +328,7 @@ grid-row-gap: 0px;
 .SignupSection {
   width: 100vw;
   height: 60vh;
+  max-height: 500px;
   // background-color: darkcyan;
 }
 
@@ -457,4 +477,8 @@ footer {
 .smiley:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.whatIs {
+  margin-top: 100px;
 }
