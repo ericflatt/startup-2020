@@ -661,3 +661,6 @@ footer {
 
 .whatIs {
   margin-top: 100px; }
+
+.cancelButton:hover {
+  color: black; }

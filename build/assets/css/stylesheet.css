@@ -22,3 +22,11 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'GT-America-Expanded-Black';
+    src: url('GT-America-Expanded-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
