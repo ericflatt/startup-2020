@@ -1,7 +1,3 @@
-@font-face {
-  font-family: gt;
-  src: url(../build/gt-america-trial-expanded-bold-webfont.woff);
-}
 
 ::selection {
   background: #E37CE2;
@@ -15,7 +11,7 @@ body {
 nav {
   position: fixed;
   height: 50px;
-  width: 350px;
+  width: auto;
   display: flex;
   top: 30px;
   left: 70px;
@@ -25,13 +21,14 @@ nav {
     width: 100%;
     text-align: center;
     margin: auto;
+    margin-right: 10px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     a {
       text-decoration: none;
-      font-family: 'gt-mono';
+      font-family: 'Source Code Pro';
       color: black;
       font-weight: 600;
     }
