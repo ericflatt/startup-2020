@@ -970,3 +970,329 @@ img {
     margin-top: 0px; }
     .blackBox img {
       width: 100%; } }
+
+.schedule {
+  margin-top: 200px;
+  padding: 0 5%; }
+  .schedule h1 {
+    font-family: 'titling-gothic-fb-extended',sans-serif;
+    font-weight: 700;
+    font-style: normal; }
+
+.scheduleHeader {
+  display: flex;
+  align-items: center; }
+  .scheduleHeader a {
+    margin-left: auto;
+    background-color: #2C4DFF;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid black;
+    font-size: 16px;
+    -webkit-box-shadow: 5px 5px 0px 0px black;
+    -moz-box-shadow: 5px 5px 0px 0px black;
+    box-shadow: 5px 5px 0px 0px black; }
+  .scheduleHeader a:nth-child(3) {
+    margin-left: 30px;
+    background-color: white;
+    color: black; }
+
+.scheduleNav {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #e1e1e1; }
+  .scheduleNav a {
+    margin-right: 45px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 10px solid black; }
+  .scheduleNav a:nth-child(2) {
+    color: #A6A6A6;
+    font-weight: 400;
+    border-bottom: 10px solid transparent; }
+  .scheduleNav a:nth-child(3) {
+    color: #A6A6A6;
+    font-weight: 400;
+    border-bottom: 10px solid transparent; }
+
+.scheduleNav-bottom {
+  display: flex;
+  align-items: center;
+  border-top: 3px solid #e1e1e1; }
+  .scheduleNav-bottom a {
+    margin-right: 45px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-top: 10px solid black; }
+  .scheduleNav-bottom a:nth-child(2) {
+    color: #A6A6A6;
+    font-weight: 400;
+    border-top: 10px solid transparent; }
+  .scheduleNav-bottom a:nth-child(3) {
+    color: #A6A6A6;
+    font-weight: 400;
+    border-top: 10px solid transparent; }
+
+.scheduleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .scheduleGrid div:nth-child(1) {
+    background-image: url("../img/kickoff.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .scheduleGrid div:nth-child(2) {
+    background-image: url("../img/sessions.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .scheduleGrid div:nth-child(3) {
+    background-image: url("../img/midpointOne.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .scheduleGrid div:nth-child(4) {
+    background-image: url("../img/midpointTwo.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .scheduleGrid div:nth-child(5) {
+    background-image: url("../img/semi.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .scheduleGrid div:nth-child(6) {
+    background-image: url("../img/celebration.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+@media only screen and (max-width: 1000px) {
+  .scheduleGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px; } }
+
+.scheduleEvent {
+  padding: 0 5%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+@media only screen and (max-width: 1000px) {
+  .scedhuleEvent {
+    height: 800px;
+    padding: 5% 5%; } }
+
+.scheduleEvent:nth-child(1) h2 {
+  font-size: 28px;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FAEB6B;
+  margin-bottom: 0; }
+
+.scheduleEvent:nth-child(1) p {
+  color: white;
+  padding-top: 0px;
+  margin-top: 5px;
+  width: 90%;
+  font-weight: 700; }
+
+.scheduleEvent:nth-child(1) span:nth-child(1) {
+  color: #FAEB6B;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 25px; }
+
+.scheduleEvent:nth-child(2) h2 {
+  font-size: 28px;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  margin-bottom: 0; }
+
+.scheduleEvent:nth-child(2) p {
+  color: white;
+  padding-top: 0px;
+  margin-top: 5px;
+  width: 90%;
+  font-weight: 700; }
+
+.scheduleEvent:nth-child(2) span:nth-child(1) {
+  color: black;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 25px; }
+
+.scheduleEvent:nth-child(3) h2 {
+  font-size: 28px;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  margin-bottom: 0; }
+
+.scheduleEvent:nth-child(3) p {
+  color: white;
+  padding-top: 0px;
+  margin-top: 5px;
+  width: 90%;
+  font-weight: 700; }
+
+.scheduleEvent:nth-child(3) span:nth-child(1) {
+  color: black;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 25px; }
+
+.scheduleEvent:nth-child(4) h2 {
+  font-size: 28px;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #F62FBF;
+  margin-bottom: 0; }
+
+.scheduleEvent:nth-child(4) p {
+  color: black;
+  padding-top: 0px;
+  margin-top: 5px;
+  width: 90%;
+  font-weight: 700; }
+
+.scheduleEvent:nth-child(4) span:nth-child(1) {
+  color: white;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 25px; }
+
+.scheduleEvent:nth-child(5) h2 {
+  font-size: 28px;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #BFFFDE;
+  margin-bottom: 0; }
+
+.scheduleEvent:nth-child(5) p {
+  color: black;
+  padding-top: 0px;
+  margin-top: 5px;
+  width: 90%;
+  font-weight: 700; }
+
+.scheduleEvent:nth-child(5) span:nth-child(1) {
+  color: #BFFFDE;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 25px; }
+
+.scheduleEvent:nth-child(6) h2 {
+  font-size: 28px;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #334DDE;
+  margin-bottom: 0; }
+
+.scheduleEvent:nth-child(6) p {
+  color: white;
+  padding-top: 0px;
+  margin-top: 5px;
+  width: 90%;
+  font-weight: 700; }
+
+.scheduleEvent:nth-child(6) span:nth-child(1) {
+  color: #334DDE;
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 25px; }
+
+.deliverables {
+  background-image: url("../img/deliverablesBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 5%; }
+
+.deliverablesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 75px; }
+  .deliverablesGrid img {
+    width: 75%;
+    display: block;
+    margin: auto; }
+  .deliverablesGrid a {
+    font-weight: 900;
+    color: black;
+    text-decoration: underline; }
+  .deliverablesGrid h1 {
+    font-family: 'titling-gothic-fb-extended',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: white; }
+  .deliverablesGrid p {
+    width: 90%;
+    font-weight: 500;
+    color: white; }
+  .deliverablesGrid hr {
+    border: 3px solid black;
+    width: 75%;
+    margin-left: 0;
+    color: transparent; }
+
+@media only screen and (max-width: 1000px) {
+  .deliverablesGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; } }
+
+.outline {
+  font-family: 'titling-gothic-fb-extended',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black; }
+
+.judges {
+  height: 100vh;
+  background-image: url("../img/judgesBG.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top; }
+  .judges h1 {
+    font-size: 64px;
+    padding: 10%;
+    font-family: 'titling-gothic-fb-extended',sans-serif;
+    font-weight: 700;
+    font-style: normal; }
+  .judges p {
+    text-align: center; }
+  .judges img {
+    margin: auto;
+    display: block; }
