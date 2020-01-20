@@ -6,134 +6,457 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
-<body class="body"> 
-  <style>
-    @font-face {
-      font-family: 'gt-bold';
-      src: url(gt-america-trial-expanded-bold-webfont.woff);
-    }
+<body> 
 
-    @font-face {
-      font-family: 'gt-mono';
-      src: url(gt-america-mono-trial-regular-webfont.woff);
-    }
-
-    @font-face {
-      font-family: 'gt-black';
-      src: url(GT-America-Expanded-Black.otf) format("opentype");
-    }
-    </style>
-    <!-- gonna use formspree for this -->
-    <div class="pictures"></div>
-    <div class="BG1"></div>
-    <div class="BG2"></div>
-    <div class="contactFormContainer">
-      <div class="contactForm">
-        <h1>Contact us</h1>
-        <form action="https://formspree.io/xeqoyzyp" method="POST">
-        <div class="contactFirstRow">
-            <p>Full name<span>*</span></p>
-            <input type="text" name="Full Name" required>
-        </div>
-        <div class="contactSecondRow">
-          <div class="contactLeft">
-              <p>Student ID Number<span>*</span></p>
-              <input type="text" name="Student ID Number" required>
-          </div>
-          <div class="contactRight">
-              <p>SCAD email<span>*</span></p>
-              <input type="text" name="SCAD Email" required>
-          </div>
-        </div>
-        <div class="contactThirdRow">
-            <p>Message<span>*</span></p>
-            <textarea name="Message" required></textarea>
-        </div>
-        <div class="contactFourthRow">
-            <button>Send</button>
-            <button class="cancelButton">Cancel</button>
-        </div>
-      </div>
-    </form>
+  <nav>
+    <div>
+      <a href="index.html#home"><img class="navLogo" src="./assets/img/navLogo.svg" alt=""></a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#schedule">Schedule</a>
+      <a href="index.html#deliverables">Deliverables</a>
+      <a href="index.html#judges">Judges</a>
+      <a href="index.html#partners">Partners</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#faq">FAQ</a>
     </div>
-  
-    <nav id="nav">
-      <div id="HomeButton"><a href="#home">Home</a></div>
-      <div id="AboutButton"><a href="#about">About</a></div>
-      <div id="FAQButton"><a href="#FAQ">FAQ</a></div>
-      <div id="ContactButton"><a href="#contact">Contact</a></div>
-    </nav>
+    <div>
+      <a href="mailto:zachra021@gmail.com?subject=StartUp 2020"><img src="./assets/img/mail.svg" alt=""></a>
+      <a href="https://www.instagram.com/scadflux/" target="_blank"><img src="./assets/img/instagram.svg" alt=""></a>
+      <a href="https://www.facebook.com/groups/scadflux" target="_blank"><img src="./assets/img/facebook.svg"  alt=""></a>
+    </div>
+    <div>
+      <a style="color: white" href="index.html#register">Register</a>
+    </div>
+  </nav>
 
-    <section id="home" class="heroSection">
-      <div class="contentContainer heroContainer">
-        <img src="./assets/img/startup-logo.svg" class="startupLogo" alt="">
-        <div class="heroMore">
-          <p>Explore Startup 2020</p>
-          <img src="./assets/img/downArrow.svg" class="downArrow" alt="">
-        </div>
+
+<section id="home" style="z-index: -999;" class="div1">
+  <img src="./assets/img/mainIMG.svg" alt="">
+  <div class="kickoffCount">
+    <p class="kickoffTitle">kickoff event in &nbsp;</p>
+    <p style="color: white;" id="countdown"></p>
+  </div>
+</section>
+
+    <div id="about" class="whatis">
+      <div>
+        <h1>What's <br> StartUp?</h1>
+      <p>SCAD StartUp is our annual, week-long design sprint hosted by <a href="https://scadflux.com" target="_blank"><span>FLUX - the UX club</span></a> in collaboration with <a href="https://www.scad.edu/about/scadpro" target="_blank"><span>SCADpro.</span></a>
+        <br><br>
+        You know when you get unshakeable ideas that basically prove you’re genius? Well, this is a chance for you to take those ideas and make them a reality. We’ll give you the toolkit and resources needed to create a kickass product or service concept in just under seven days. Make connections and get tips from real life designers, and pitch your solution to professional industry leaders. Who knows, maybe you’ll even take your product to launch!
+        <br><br>
+        It’s pretty much Shark Tank, just not on TV (yet).
+      </p>
+
+      <button>
+        <p>Register Your Team</p>
+      </button>
       </div>
-    </section>
-    <section id="about" class="aboutSection">
-      <div class="contentContainer aboutContainer">
-        <h1 class="whatIs">So what is StartUp</h1>
-        <div class="aboutDescContainer">
-            <h2><strong>SCAD StartUp is an annual event<br> hosted by FLUX - the UX club in collaboration with SCADpro.</strong></h2>
-            <p> It’s a week-long design competition where students are challenged to come up with a product or service concept based on a theme, and are given a design toolkit of sources to utilize. Each team’s final deliverables are presented in the form of a slide deck which they present to a panel of judges that serve as mock investors.</p>
-            <p>This upcoming StartUp event is going to be on <br> <strong>February 7th - February 14th 2020.</strong></p>
-        </div>
+      <div>
+        <img src="./assets/img/pic1.png" alt="">
+        <img src="./assets/img/pic2.png" alt="">
       </div>
-    </section> 
-    <section id="FAQ" class="QuestionsSection">
-      <div class="contentContainer">
-        <div class="questionsTop">
-            <img src="./assets/img/questionMark.svg" class="questionMark"alt="">
-            <div class="questionTitleContainer">
-                <h1 class="questionsTitle">Some questions <br>you probably have</h1>
-            </div>
+    </div>
+
+    <div class="oneWeekBg">
+      <div class="oneWeek">
+        <div>
+          <h1>One Week</h1>
+          <p>SCAD StartUp is our annual, week-long design sprint hosted by <span>FLUX - the UX club</span> in collaboration with <span>SCADpro.</span>
+            <br><br>
+            You know when you get unshakeable ideas that basically prove you’re genius? Well, this is a chance for you to take those ideas and flesh them out with up to four other friends. We’ll give you the toolkit and resources needed to create a kickass product or service concept in just under seven days. Make connections and get tips from real life designers, and pitch your solution to professional industry leaders. Who knows, maybe you’ll even take your product to launch!
+            <br><br>
+            It’s pretty much Shark Tank, just not on TV (yet).
+          </p>
+    
+          
+            <button onclick="window.location='';">
+              <p>Register Your Team</p>
+            </button>
         </div>
-        <div class="questionsContainer">
-        <h2>What is SCAD StartUp</h2>
-        <p>You know when you get unshakeable ideas that basically prove you’re genius? Well, this is a week-long design competition where you get to flesh them out with up to four other friends and pitch it to a group of mock-investors at the end. Similar to Shark Tank, just not on TV (yet).</p>
-        <h2>Can I participate</h2>
-        <p>To participate in this StartUp event, you must be a SCAD student. All undergraduate and graduate students are invited to join the party. Any year, any major.</p>
-        <h2>How are teams set up</h2>
-        <p>You’re more than welcome to plan your team ahead of time. Teams must be 2-5 people, and must represent a minimum of two different majors.</p>
-        <h2>What if I don’t have a team</h2>
-        <p>No worries, you don’t need to have a team before coming to the Kickoff event. You’ll be able to meet new people at StartUp Sessions following the Kickoff, and we’ll help you find fellow geniuses to work with. Just make sure to notify us on the registration form.</p>
-        <h2>And if I’m crowned champion</h2>
-        <p>First, second, and third place winners will win cash prizes (amounts will be announced soon). For all winners, you’ll receive extra merch, total bragging rights, and other cool stuff. And most importantly, you’ll walk out with something badass to put on your resume & portfolio.</p>
-        <h2>Okay, and if I forget to RSVP</h2>
-        <p>There’s still a chance! If people who RSVP’d don’t show up, a standby line will open at the Kickoff Event. It’s first-come first-served. So come early.</p>
-        <h2>How much do I have to pay for this</h2>
-        <p>It’s completely free.</p>
-        <h2>Am I even qualified</h2>
-        <p>Yes you are! Leave your resume at home. We know you’ve got skill.</p>
-        <h2>What do I bring to the Kickoff Event and StartUp Sessions</h2>
+    
+        <div>
+          <img src="./assets/img/pic3.png" alt="">
+          <img src="./assets/img/pic4.png" alt="">
+        </div>
+    
+      </div >
+    </div>
+
+
+  <div id="theme" class="theme">
+    <div>
+      <img style="opacity: 1;" src="./assets/img/2020.svg" alt="">
+      <h1>Theme announced <br>
+        at Kickoff
+      </h1>
+      <p>
+        Join us February 7th at Arnold Hall
+      </p>
+    </div>
+    
+    <div class="themeGrid">
+      <div>
+        <img src="./assets/img/2019.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/img/2018.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/img/2017.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/img/2016.svg" alt="">
+      </div>
+    </div>
+
+    <div class="blackBox">
+      <img src="./assets/img/2019Numbers.png" alt="">
+    </div>
+    
+  </div>
+
+  <div id="schedule" class="schedule">
+
+    <div class="scheduleHeader">
+      <h1>Event <br> Schedule</h1>
+      <!--<a href="/">Add to Calendar</a>
+      <a href="/">Download Event Schedule</a>-->
+    </div>
+
+    <div class="scheduleNav">
+      <a href="/">StartUp Schedule</a>
+      <!--<a href="/">StartUp Sessions</a>
+      <a href="/">Virtual Workshops</a>-->
+    </div>
+
+    <div class="scheduleGrid">
+      <div class="scheduleEvent">
+        <h2>StartUp <br> Kickoff</h2> 
+        <p>Join us to learn more about the what StartUp 2020 has to offer. This year’s theme will be revealed, and we’ll be going over what the next week will look like.</p>
         <p>
-            1. Proof you go here. A student ID will do.<br>
-            2. Laptop & phone <br>
-            3. Chargers. Duh <br>
-            4. Stuff that help you design. <br>
-            5. Hunger to shake things up.
+          <span>Feb. 07th</span> Arnold Hall, Auditorium, Time TBD
         </p>
       </div>
-      </div>
-    </section>
-    <section id="contact" class="SignupSection">
-      <div class="contentContainer">
-        <h1 class="contactTitle">Sign-ups begin <br>Winter 2020</h1>
-        <p>In the mean time, if you have any questions please reach out below.</p>
-        <button id="contactButton">Contact Us</button>
-      </div>
-    </section>
 
-    <footer>
+      <div class="scheduleEvent">
+        <h2>StartUp <br> Sessions</h2> 
+        <p>This is your team’s opporunity to learn and get design resources to create a killer project. Professors and students of different majors will be exploring areas of the UX design process.</p>
+        <p>
+          <span>Feb. 07th</span> Arnold Hall, Auditorium, Time TBD
+        </p>
+      </div>
+
+      <div class="scheduleEvent">
+        <h2>Midpoint <br> Check #1</h2> 
+        <p>Come meet with mentors, practice your pitches and get the feedback needed to enhance your overall solution. Your team will be required to attend only one Midpoint Check.</p>
+        <p>
+          <span>Feb. 11th</span> Ruskin Hall, 5:00pm - 9:00pm
+        </p>
+      </div>
+
+      <div class="scheduleEvent">
+        <h2>Midpoint <br> Check #2</h2> 
+        <p>Come meet with mentors, practice your pitches and get the feedback needed to enhance your overall solution. Your team will be required to attend only one Midpoint Check.</p>
+        <p>
+          <span>Feb. 12th</span> Ruskin Hall, 5:00pm - 9:00pm
+        </p>
+      </div>
+
+      <div class="scheduleEvent">
+        <h2>Semi-Final <br> Pitches</h2> 
+        <p>The day has come! Pitch your final solution to industry-professional mentors and judges.
+        <br><br>
+          This event is required for all teams.</p>
+        <p>
+          <span>Feb. 14th</span> 6:00 - 8:00pm @ Museum of Art Classrooms
+        </p>
+      </div>
+
+      <div class="scheduleEvent">
+        <h2>StartUp <br> Celebration</h2> 
+        <p>Teams will set up for the StartUp Showcase, and vote for your favorite teams! The top 4 teams will be invited to pitch their projects. Oh yeah, did we mention there’ll be prizes?</p>
+        <p>
+          <span>Feb. 14th</span> 6:00 - 8:00pm @ Museum of Art Classrooms
+        </p>
+      </div>
+    </div>
+
+    <div class="scheduleNav-bottom">
+      <a href="/">StartUp Schedule</a>
+      <!--<a href="/">StartUp Sessions</a>
+      <a href="/">Virtual Workshops</a>-->
+    </div>
+    
+  </div>
+
+  <div id="deliverables" class="deliverables">
+    <div class="deliverablesIntro">
+      <h1>Deliverables</h1>
+    </div>
+    <div class="deliverablesGrid">
       <div>
-        <p>We're only just beginning, come back later to see more</p>
-        <img class="smiley" src="./assets/img/smileyFace.svg" alt="">
+        <h1>
+          <span class="outline">1</span>
+        </h1>
+        <hr>
+        <h1>Presentation <br> Deck</h1>
+        <p>
+          Students will wow the judges with a digital slideshow to explain their idea and area of impact that their new product will have.   
+          See who the judges are <a href="landing.html#judges">here</a>.
+          </p>
       </div>
-    </footer>
 
+      <div>
+        <img src="./assets/img/triangle.svg" alt="">
+      </div>
+
+      <div>
+        <img src="./assets/img/board.svg" alt="">
+      </div>
+
+      <div>
+        <h1>
+          <span class="outline">2</span>
+        </h1>
+        <hr>
+        <h1>Prototype</h1>
+        <p>
+          Students need to provide an example of their concept through a prototype that they can show the judges, either in digital or physical form.
+          </p>
+      </div>
+
+      <div>
+        <h1>
+          <span class="outline">3</span>
+        </h1>
+        <hr>
+        <h1>Business <br> Model</h1>
+        <p>
+          Through this exercise students will think through all the ways their new company will make an impact and generate revenue.
+          Download the business model PDF <a href=""> here</a>.
+          </p>
+      </div>
+
+      <div>
+        <img src="./assets/img/triangles.svg" alt="">
+      </div>
+
+      <div>
+        <img src="./assets/img/dollar-signs.svg" alt="">
+      </div>
+
+      <div>
+        <h1>
+          <span class="outline">4</span>
+        </h1>
+        <hr>
+        <h1>Wow Factor</h1>
+        <p>
+          Anything addition to the required above 3 deliverables are encouraged! Find what fits your passion and skill set to incorportate into the final presentation.
+          Posters, Vision Video, Handouts, Clothing, etc
+          </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="judges" class="judges">
+    <div>
+      <h1>
+        JUDGES
+        <br>
+        AND MENTORS
+      </h1>
+    </div>
+    <div>
+      <p>
+        To be announced <br> check back later
+      </p>
+      <img src="./assets/img/smiley.svg" alt="">
+    </div>
+  </div>
+
+  <div id="partners" class="partners">
+    <h1>StartUp <br> Partners</h1>
+    <p>
+      To be announced <br> check back later
+    </p>
+  </div>
+  
+  <div id="team" class="team">
+    <div>
+      <h1>Meet The <br> StartUp Team</h1>
+    </div>
+    <div class="teamGrid">
+      <div>
+        <img src="./assets/img/team/zachra.png" alt="">
+        <div class="name">
+          <h2>Zachra <br> Pradipta</h2>
+          <p>Startup <br> Director</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/dane.png" alt="">
+        <div class="name">
+          <h2>Dane <br> Galbraith</h2>
+          <p>Event <br> Coordinator</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/nick.png" alt="">
+        <div class="name">
+          <h2>Nicolas <br> Pellegrino</h2>
+          <p>Visual <br> Designer</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/eric.png" alt="">
+        <div class="name">
+          <h2>Eric <br> Flatt</h2>
+          <p>Web <br> Developer</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/andrew.png" alt="">
+        <div class="name">
+          <h2>Andrew <br> Goodridge</h2>
+          <p>Web <br> Developer</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/dallin.png" alt="">
+        <div class="name">
+          <h2>Dallin <br> Higgins</h2>
+          <p>Sessions <br> Coordinator</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/cherie.png" alt="">
+        <div class="name">
+          <h2>Cherie <br> Chung</h2>
+          <p>Social <br> Media</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/sarah.png" alt="">
+        <div class="name">
+          <h2>Sarah <br> Doncals</h2>
+          <p>Communications <br> Coordinator</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/elly.png" alt="">
+        <div class="name">
+          <h2>Connelly <br> Morris</h2>
+          <p>Logistics</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/jena.png" alt="">
+        <div class="name">
+          <h2>Jena <br> Martin</h2>
+          <p>Logistics</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/ray.png" alt="">
+        <div class="name">
+          <h2>Ray <br> Crowell</h2>
+          <p>SCADpro</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/victoria.png" alt="">
+        <div class="name">
+          <h2>Victoria <br> Brown</h2>
+          <p>SCADpro</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/caleb.png" alt="">
+        <div class="name">
+          <h2>Caleb <br> Kitchings</h2>
+          <p>SCADpro</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/josh.png" alt="">
+        <div class="name">
+          <h2>Josh <br> Lind</h2>
+          <p>SCADpro</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/img/team/bc.png" alt="">
+        <div class="name">
+          <h2>BC <br> Hwang</h2>
+          <p>Chair of <br> UX Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="faq" class="questionIntro">
+    <h1>HAVE ANY <br> Questions?</h1>
+  </div>
+
+  <section class="questions">
+    <div class="questionsGrid">
+      <div>
+        <h2>Can I participate?</h2>
+        <p>To participate in this startup event, you must be a SCAD student. All undergraduate and graduate students are invited to join the party. Any year, any major.</p>
+
+        <h2>How are teams set up?</h2>
+        <p>You’re more than welcome to plan your team ahead of time. Teams must be 2-5 people, and must represent a minimum of two different majors.</p>
+
+        <h2>What if I don’t have a team?</h2>
+        <p>No worries, you don’t need to have a team before coming to the Kickoff event. You’ll be able to meet new people at StartUp Sessions following the Kickoff, and we’ll help you find fellow geniuses to work with. Just make sure to notify us on the registration form.</p>
+
+        <h2>And if I’m crowned champion?</h2>
+        <p>First, second, and third place winners will win cash prizes (amounts will be announced soon). For all winners, you’ll receive extra merch, total bragging rights, and other cool stuff. And most importantly, you’ll walk out with something badass to put on your resume & portfolio.</p>
+
+        <h2>Okay, and if I forget to RSVP?</h2>
+        <p>There’s still a chance! If people who RSVP’d don’t show up, a standby line will open at the Kickoff Event. It’s first-come first-served. So come early.</p>
+
+        <h2>How much do I have to pay for this?</h2>
+        <p>It’s completely free.</p>
+
+        <h2>Am I even qualified?</h2>
+        <p>Yes you are! Leave your resume at home. We know you’ve got skill.</p>
+
+        <h2>What do I bring to the Kickoff Event and StartUp Sessions?</h2>
+        <p>
+          1. Proof you go here. A student ID will do. <br>
+          2. Laptop & phone. <br>
+          3. Chargers. Duh <br>
+          4. Stuff that helps you design. <br>
+        </p>
+      </div>
+      <div>
+        <img src="./assets/img/01.png" alt="">
+        <img src="./assets/img/02.png" alt="">
+        <img src="./assets/img/03.png" alt="">
+        <img src="./assets/img/04.png" alt="">
+      </div>
+    </div>
+  </section>
+  
+  <div id="register" class="final">
+    <div>
+      <img class="startupLogo" src="./assets/img/startUp2020.svg" alt="">
+    </div>
+        <div>
+          <button onclick="window.location='';">
+            <p>Register Your Team</p>
+          </button>
+          <button onclick="window.location='mailto:zachra021@gmail.com?subject=StartUp 2020';">
+            <p>Contact Us</p>
+          </button>
+        </div>
+
+      </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/lax.js"> </script>

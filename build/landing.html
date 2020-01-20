@@ -8,32 +8,29 @@
 </head>
 <body> 
 
-  <div class="fixedNav">
-    <nav id="nav" class="newNav">
-        <div><img src="./assets/img/startup-blue.svg" alt=""></div>
-        <div id="HomeButton"><a href="#home">About</a></div>
-        <div id="AboutButton"><a href="#about">Theme</a></div>
-        <div id="FAQButton"><a href="#FAQ">FAQ</a></div>
-        <div id="ContactButton"><a href="#contact">Schedule</a></div>
-        <div id="HomeButton"><a href="#FAQ">Partners</a></div>
-        <div id="AboutButton"><a href="#FAQ">Mentors</a></div>
-        <div id="FAQButton"><a href="#FAQ">Team</a></div>
-        <div id="ContactButton"><a href="#FAQ">Contact</a></div>
-        <div class="bottomRec"></div>
-      </nav>
-
-      <div class="social">
-        <div class="socialNav"></div>
-        <div class="bottomSocial"></div>
-      </div>
-
-      <div class="register">
-        <div class="registerButton"><a href="/">Register</a></div>
-        <div class="registerBottom"></div>
-      </div>
+  <nav>
+    <div>
+      <a href="index.html#home"><img class="navLogo" src="./assets/img/navLogo.svg" alt=""></a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#schedule">Schedule</a>
+      <a href="index.html#deliverables">Deliverables</a>
+      <a href="index.html#judges">Judges</a>
+      <a href="index.html#partners">Partners</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#faq">FAQ</a>
     </div>
+    <div>
+      <a href=""><img src="./assets/img/mail.svg" alt=""></a>
+      <a href=""><img src="./assets/img/instagram.svg" alt=""></a>
+      <a href=""><img src="./assets/img/facebook.svg" alt=""></a>
+    </div>
+    <div style="margin-left: 50px;">
+      <a style="color: white" href="">Register</a>
+    </div>
+  </nav>
 
-<section style="z-index: -999;" class="div1">
+
+<section id="home" style="z-index: -999;" class="div1">
   <img src="./assets/img/mainIMG.svg" alt="">
   <div class="kickoffCount">
     <p class="kickoffTitle">kickoff event in &nbsp;</p>
@@ -41,7 +38,7 @@
   </div>
 </section>
 
-    <div class="whatis">
+    <div id="about" class="whatis">
       <div>
         <h1>What's <br> StartUp?</h1>
       <p>SCAD StartUp is our annual, week-long design sprint hosted by <a href="https://scadflux.com" target="_blank"><span>FLUX - the UX club</span></a> in collaboration with <a href="https://www.scad.edu/about/scadpro" target="_blank"><span>SCADpro.</span></a>
@@ -87,7 +84,7 @@
     </div>
 
 
-  <div class="theme">
+  <div id="theme" class="theme">
     <div>
       <img style="opacity: 1;" src="./assets/img/2020.svg" alt="">
       <h1>Theme announced <br>
@@ -119,18 +116,18 @@
     
   </div>
 
-  <div class="schedule">
+  <div id="schedule" class="schedule">
 
     <div class="scheduleHeader">
       <h1>Event <br> Schedule</h1>
-      <a href="/">Add to Calendar</a>
-      <a href="/">Download Event Schedule</a>
+      <!--<a href="/">Add to Calendar</a>
+      <a href="/">Download Event Schedule</a>-->
     </div>
 
     <div class="scheduleNav">
       <a href="/">StartUp Schedule</a>
-      <a href="/">StartUp Sessions</a>
-      <a href="/">Virtual Workshops</a>
+      <!--<a href="/">StartUp Sessions</a>
+      <a href="/">Virtual Workshops</a>-->
     </div>
 
     <div class="scheduleGrid">
@@ -187,13 +184,13 @@
 
     <div class="scheduleNav-bottom">
       <a href="/">StartUp Schedule</a>
-      <a href="/">StartUp Sessions</a>
-      <a href="/">Virtual Workshops</a>
+      <!--<a href="/">StartUp Sessions</a>
+      <a href="/">Virtual Workshops</a>-->
     </div>
     
   </div>
 
-  <div class="deliverables">
+  <div id="deliverables" class="deliverables">
     <div class="deliverablesIntro">
       <h1>Deliverables</h1>
     </div>
@@ -206,7 +203,7 @@
         <h1>Presentation <br> Deck</h1>
         <p>
           Students will wow the judges with a digital slideshow to explain their idea and area of impact that their new product will have.   
-          See who the judges are <a href="/">here</a>.
+          See who the judges are <a href="landing.html#judges">here</a>.
           </p>
       </div>
 
@@ -265,7 +262,7 @@
 
   </div>
 
-  <div class="judges">
+  <div id="judges" class="judges">
     <div>
       <h1>
         JUDGES
@@ -281,25 +278,14 @@
     </div>
   </div>
 
-  <div class="partners">
+  <div id="partners" class="partners">
     <h1>StartUp <br> Partners</h1>
-    <div class="partnersGrid">
-      <div>
-        <img src="./assets/img/Ford-logo.png" alt="">
-        <p>Ford Motor Company</p>
-      </div>
-      <div>
-        <img src="./assets/img/Ford-logo.png" alt="">
-        <p>Ford Motor Company</p>
-      </div>
-      <div>
-        <img src="./assets/img/Ford-logo.png" alt="">
-        <p>Ford Motor Company</p>
-      </div>
-    </div>
+    <p>
+      To be announced <br> check back later
+    </p>
   </div>
   
-  <div class="team">
+  <div id="team" class="team">
     <div>
       <h1>Meet The <br> StartUp Team</h1>
     </div>
@@ -412,7 +398,7 @@
     </div>
   </div>
 
-  <div class="questionIntro">
+  <div id="faq" class="questionIntro">
     <h1>HAVE ANY <br> Questions?</h1>
   </div>
 
@@ -457,7 +443,7 @@
     </div>
   </section>
   
-  <div class="final">
+  <div id="register" class="final">
     <div>
       <img class="startupLogo" src="./assets/img/startUp2020.svg" alt="">
     </div>
