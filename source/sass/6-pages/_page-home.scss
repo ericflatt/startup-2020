@@ -8,37 +8,7 @@ body {
 }
 
 
-nav {
-  position: fixed;
-  height: 50px;
-  width: auto;
-  display: flex;
-  top: 30px;
-  left: 70px;
-  background-color: white;
-  border: 2px solid black;
-  div {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    margin-right: 10px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-      text-decoration: none;
-      font-family: 'Source Code Pro';
-      color: black;
-      font-weight: 600;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    left: 50%;
-    transform: translateX(-60%);
-    width: 300px;
-    }
-}
+
 
 .current {
   background-color: black;
