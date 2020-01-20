@@ -25,7 +25,9 @@ $(function() {
     }
   });
 
-
+  $('input[type="checkbox"]').on('change', function() {
+    $('input[type="checkbox"]').not(this).prop('checked', false);
+ });
 
 var countDownDate = new Date("Feb 7, 2020 12:00:00").getTime();
 
