@@ -22,6 +22,10 @@ $(document).ready(function(){
   });
 });
 
+function form() {
+  window.location='https://docs.google.com/forms/d/e/1FAIpQLSfstMpJ4x2dnDOSSj-NnfY8WMX6qWb1epoaAIY8NZyhDXKnoA/viewform';
+}
+
 
 $(function() {
     $("#contactButton").click(function() {

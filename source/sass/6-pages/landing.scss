@@ -2,9 +2,8 @@ h1,h2,h2,h4,h5,p{
     font-family: 'Source Code Pro';
 }
 
-body{
-    overflow-x: hidden;
-    
+html{
+    overflow-x: hidden !important;
 }
 
 img{
@@ -24,7 +23,10 @@ img{
     }
 }
 
+
+
 nav{
+    z-index: 9999;
     position: fixed;
     display: flex;
     align-items: center;
@@ -75,6 +77,13 @@ nav{
         color: white;
         position: absolute;
         right: 100px;
+        transition: .2s ease;
+    }
+
+    div:nth-child(3):hover{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
 
     div:nth-child(n+2){
@@ -101,6 +110,19 @@ nav{
     z-index: -999;
 }
 
+@media only screen and (max-width:1000px){
+    .theme2020{
+        width: 80%;
+    }    
+}
+
+
+@media only screen and (max-width:1000px){
+    .div1 img{
+        width: 80% !important;
+    }
+}
+
 .div1 img{
     width: 50%;
     display: block;
@@ -110,12 +132,19 @@ nav{
 .kickoffCount{
     position: absolute;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     bottom: 0;
     display: flex;
+    z-index: 1000;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width:1000px){
+    .kickoffCount{
+        display: none;
+    }
 }
 
 #countdown{
@@ -162,7 +191,7 @@ nav{
         font-family: 'titling-gothic-fb-extended',sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 51px;
+        font-size: 40px;
         margin-bottom: 75px;
         color: #ABC4FF;
     }
