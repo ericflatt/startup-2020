@@ -80,15 +80,17 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var myVideo=document.getElementById("navVideo");
+
+var navVideo=document.getElementById("navVideo");
 
 function Pause()
 {
-  myVideo.pause();
+  navVideo.pause();
+  navVideo.currentTime = 0;
 }
 
 function Play()
 {
-  if (myVideo.paused)
-  myVideo.play();
+  if (navVideo.paused)
+  navVideo.play();
 }

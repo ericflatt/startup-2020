@@ -626,14 +626,35 @@ nav{
     }
 }
 
+.bottomSchedule{
+    width: 100% !important;
+    padding: 3% 5% !important;
+    background-color: #0E2DD6 !important;
+    margin-bottom: 0 !important;
+    margin-top: 25px !important;
+}
+
 .scheduleEvent{
-    padding: 5% 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    p{
+    h2{
+        padding: 1% 5%;
+    }
+
+    p:nth-child(2){
+        padding: 0% 5%;
+        width: 100%;
+    }
+
+    p:nth-child(3){
         font-weight: 500;
+        background-color: black;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: 0;
+        //padding: 2% 5%;
     }
 }
 
@@ -658,9 +679,8 @@ nav{
 
     p{
         color: white;
-        padding-top: 0px;
-        margin-top: 5px;
-        width: 90%;
+        //margin-top: 5px;
+        //width: 100%;
         font-weight: 500;
     }
 
@@ -687,10 +707,11 @@ nav{
 
     p{
         color: white;
-        padding-top: 0px;
-        margin-top: 5px;
-        width: 90%;
+        //padding-top: 0px;
+        //margin-top: 5px;
+        //width: 90%;
         font-weight: 500;
+        margin-bottom: 0px;
     }
 
     span:nth-child(1){
@@ -717,7 +738,7 @@ nav{
         color: white;
         padding-top: 0px;
         margin-top: 5px;
-        width: 90%;
+        //width: 90%;
         font-weight: 500;
     }
 
@@ -745,7 +766,7 @@ nav{
         color: white;
         padding-top: 0px;
         margin-top: 5px;
-        width: 90%;
+        //width: 90%;
         font-weight: 500;
     }
 
@@ -773,7 +794,7 @@ nav{
         color: white;
         padding-top: 0px;
         margin-top: 5px;
-        width: 90%;
+        //width: 90%;
         font-weight: 500;
     }
 
@@ -801,7 +822,7 @@ nav{
         color: white;
         padding-top: 0px;
         margin-top: 5px;
-        width: 90%;
+        //width: 90%;
         font-weight: 500;
     }
 
@@ -831,7 +852,7 @@ nav{
         color: white;
         padding-top: 0px;
         margin-top: 5px;
-        width: 90%;
+        //width: 90%;
         font-weight: 500;
     }
 
@@ -1113,6 +1134,11 @@ nav{
         margin-left: 0;
         line-height: 1.2;
         color: #bdc7ff;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
     }
 
 }

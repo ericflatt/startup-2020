@@ -1088,13 +1088,28 @@ nav {
     margin-top: 30px;
     margin-bottom: 30px; } }
 
+.bottomSchedule {
+  width: 100% !important;
+  padding: 3% 5% !important;
+  background-color: #0E2DD6 !important;
+  margin-bottom: 0 !important;
+  margin-top: 25px !important; }
+
 .scheduleEvent {
-  padding: 5% 5%;
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  .scheduleEvent p {
-    font-weight: 500; }
+  .scheduleEvent h2 {
+    padding: 1% 5%; }
+  .scheduleEvent p:nth-child(2) {
+    padding: 0% 5%;
+    width: 100%; }
+  .scheduleEvent p:nth-child(3) {
+    font-weight: 500;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0; }
 
 @media only screen and (max-width: 1000px) {
   .scedhuleEvent {
@@ -1112,9 +1127,6 @@ nav {
 
 .scheduleEvent:nth-child(1) p {
   color: white;
-  padding-top: 0px;
-  margin-top: 5px;
-  width: 90%;
   font-weight: 500; }
 
 .scheduleEvent:nth-child(1) span:nth-child(1) {
@@ -1135,10 +1147,8 @@ nav {
 
 .scheduleEvent:nth-child(2) p {
   color: white;
-  padding-top: 0px;
-  margin-top: 5px;
-  width: 90%;
-  font-weight: 500; }
+  font-weight: 500;
+  margin-bottom: 0px; }
 
 .scheduleEvent:nth-child(2) span:nth-child(1) {
   color: white;
@@ -1160,7 +1170,6 @@ nav {
   color: white;
   padding-top: 0px;
   margin-top: 5px;
-  width: 90%;
   font-weight: 500; }
 
 .scheduleEvent:nth-child(3) span:nth-child(1) {
@@ -1183,7 +1192,6 @@ nav {
   color: white;
   padding-top: 0px;
   margin-top: 5px;
-  width: 90%;
   font-weight: 500; }
 
 .scheduleEvent:nth-child(4) span:nth-child(1) {
@@ -1206,7 +1214,6 @@ nav {
   color: white;
   padding-top: 0px;
   margin-top: 5px;
-  width: 90%;
   font-weight: 500; }
 
 .scheduleEvent:nth-child(5) span:nth-child(1) {
@@ -1229,7 +1236,6 @@ nav {
   color: white;
   padding-top: 0px;
   margin-top: 5px;
-  width: 90%;
   font-weight: 500; }
 
 .scheduleEvent:nth-child(6) span:nth-child(1) {
@@ -1252,7 +1258,6 @@ nav {
   color: white;
   padding-top: 0px;
   margin-top: 5px;
-  width: 90%;
   font-weight: 500; }
 
 .scheduleEvent:nth-child(7) span:nth-child(1) {
@@ -1457,6 +1462,9 @@ nav {
     margin-left: 0;
     line-height: 1.2;
     color: #bdc7ff; }
+  .teamGrid a {
+    text-decoration: none;
+    color: white; }
 
 .name {
   flex-direction: column; }
