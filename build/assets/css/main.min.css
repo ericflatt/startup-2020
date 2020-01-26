@@ -1103,7 +1103,8 @@ nav {
     padding: 1% 5%; }
   .scheduleEvent p:nth-child(2) {
     padding: 0% 5%;
-    width: 100%; }
+    width: 100%;
+    height: 100% !important; }
   .scheduleEvent p:nth-child(3) {
     font-weight: 500;
     background-color: black;
