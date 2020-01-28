@@ -637,6 +637,26 @@ html {
 img {
   pointer-events: none; }
 
+#video {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+#home {
+  display: flex;
+  height: 100%; }
+
+.timer {
+  position: relative;
+  left: 0px;
+  bottom: 10px;
+  right: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
 .navLogo {
   width: 50%;
   margin-right: 0;
