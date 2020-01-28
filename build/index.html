@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body> 
 
   <nav>
     <div>
       <a class="navGif" href="index.html#home">
-        <video onmouseover="Play()" onmouseout="Pause()" id="navVideo" class="navLogo navGif"  muted loop playsinline id="video">
+        <video onmouseover="Play()" onmouseout="Pause()" id="navVideo" class="navLogo navGif"   muted loop playsinline id="video">
           <source src="./assets/img/nav_1.mp4" type="video/mp4">
       </video> 
       </a>
@@ -29,7 +30,7 @@
       <a href="https://www.facebook.com/groups/scadflux" target="_blank"><img src="./assets/img/facebook-white.svg"  alt=""></a>
     </div>
     <a target="_blank" class="registerButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfstMpJ4x2dnDOSSj-NnfY8WMX6qWb1epoaAIY8NZyhDXKnoA/viewform">
-      Register
+      Register Today!
   </a>
   </nav>
 
@@ -104,90 +105,259 @@
   </div>
 
   
-  <div id="schedule" class="schedule">
-
-    <div class="scheduleHeader">
-      <h1>Event <br> Schedule</h1>
-      <!--<a href="/">Add to Calendar</a>
-      <a href="/">Download Event Schedule</a>-->
-    </div>
-
-    <div class="scheduleNav">
-      <a href="index.html#schedule">StartUp Schedule</a>
-
-    </div>
-
-    <div class="scheduleGrid">
-      <div class="scheduleEvent">
-        <h2>StartUp <br> Kickoff</h2> 
-        <p>Join us to learn more about the what StartUp 2020 has to offer. This year’s theme will be revealed, and we’ll be going over what the next week will look like.</p>
-        <div>
+  <div style="padding-top: 5%;" id="schedule" class="schedule">
+    <div id="schedule" class="schedule" >
+      <div style="padding-left: 5%;" class="scheduleHeader">
+          <h1>Event <br> Schedule</h1>
+          <!--<a href="/">Add to Calendar</a>
+          <a href="/">Download Event Schedule</a>-->
+        </div>
+        <ol class="carousel-nav" data-flickity='{"asNavFor":".carousel", "draggable": "false", "cellAlign":"left", "contain":"false" }'>
+          <li class="is-selected">StartUp Schedule</li>
+          <li>StartUp Sessions</li>
+          <!--<li>Virtual Workshops</li>-->
+        </ol>
+      <div  class="carousel" data-flickity="">
+      <div id="section1" class="scheduleGrid carousel-cell">
+        <div class="scheduleEvent">
+          <h2>StartUp <br> Kickoff</h2> 
+          <p>Join us to learn more about the what StartUp 2020 has to offer. This year’s theme will be revealed, and we’ll be going over what the next week will look like.
+            <br><br>
+            *Check in is at 10:30am
+          </p>
+          <div>
+            <p class="bottomSchedule">
+              <span>Feb. 07th</span> 11:00am - 12:00pm @ Arnold Hall Auditorium
+            </p>
+          </div>
+        </div>
+  
+        <div class="scheduleEvent">
+          <h2>StartUp <br> Sessions</h2> 
+          <p>This is your team’s opportunity to learn and get design resources to create a killer project. Professors and students of different majors will be exploring areas of the UX design process.</p>
           <p class="bottomSchedule">
-            <span>Feb. 07th</span> Time TBD @ Arnold Hall Auditorium
+            <span>Feb. 07th</span> 12:00pm - 4:00pm @ Arnold Hall Auditorium
+          </p>
+        </div>
+  
+        <div class="scheduleEvent">
+          <h2>Midpoint <br> Check #1</h2> 
+          <p>Come meet with mentors, practice your pitches and get the feedback needed to enhance your overall solution. Your team will be required to attend only one Midpoint Check.
+            <br><br>
+            *Your team is required to attend one Midpoint Check.
+          </p>
+          
+          <p class="bottomSchedule">
+            <span>Feb. 11th</span> 5:00pm - 9:00pm @ Ruskin Hall
+          </p>
+        </div>
+  
+        <div class="scheduleEvent">
+          <h2>Midpoint <br> Check #2</h2> 
+          <p>Come meet with mentors, practice your pitches and get the feedback needed to enhance your overall solution. Your team will be required to attend only one Midpoint Check.
+            <br><br>
+            *Your team is required to attend one Midpoint check.
+          </p>
+          <p class="bottomSchedule">
+            <span>Feb. 12th</span> 5:00pm - 9:00pm @ Ruskin Hall
+          </p>
+        </div>
+  
+        <div class="scheduleEvent">
+          <h2>Semi-Final <br> Pitches</h2> 
+          <p>The day has come! Pitch your final solution to industry-professional mentors and judges.
+          <br><br>
+          *This event is requried for all teams.
+          </p>
+          <p class="bottomSchedule">
+            <span>Feb. 14th</span> 8:30am - 11:00am @ Museum of Art Classrooms
+          </p>
+        </div>
+  
+        <div class="scheduleEvent">
+          <h2>StartUp <br> Showcase</h2> 
+          <p>The StartUp Showcase is your time to vote for your “fan favorite” project, so invite as many people as you know. This event is open to all SCAD students.</p>
+          <p class="bottomSchedule">
+            <span>Feb. 14th</span> 12:00pm - 1:00pm @ Museum of Art Classrooms
+          </p>
+        </div>
+        <div style="width: 100%;" class="scheduleEvent lastEvent">
+          <h2>StartUp <br> Celebration</h2> 
+          <p>Teams will set up for the StartUp Showcase, and vote for your favorite teams! The top 4 teams will be invited to pitch their projects. Oh yeah, did we mention there’ll be prizes?</p>
+          <p class="bottomSchedule">
+            <span>Feb. 14th</span> 1:00pm - 2:30pm @ Museum of Art Classrooms
           </p>
         </div>
       </div>
-
-      <div class="scheduleEvent">
-        <h2>StartUp <br> Sessions</h2> 
-        <p>This is your team’s opporunity to learn and get design resources to create a killer project. Professors and students of different majors will be exploring areas of the UX design process.</p>
-        <p class="bottomSchedule">
-          <span>Feb. 07th</span> Time TBD @ Arnold Hall Auditorium
-        </p>
+  
+      <div id="section2" class="sessionsSchedule carousel-cell">
+          <div id="section2" class="sessionsGrid">
+              <div>
+                  <h3>Getting Started</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 205
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>From secondary research to better understanding your problem space, learn how to discover an opportunity space and make your first steps.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Research</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 206
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Understand how to form relevant and helpful research questions and how to use those to better comprehend the audience for which you are designing.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Visual Design</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 207
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Discover how to create a more aesthetically pleasing final product, from product to pitch, and everything in between.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Project Management</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 208
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Learn how to better lead and cooperate with a team, including making final decisions and leading productive conversations.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Storytelling</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 209
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Ensure that your week is spent productively designing the narrative that describes your product’s impact and future.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Prototyping</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 210
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Come learn more about how you can prototype digital and physical products to create something that will awe the judges. Personal laptops highly encouraged.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+          </div>  
       </div>
-
-      <div class="scheduleEvent">
-        <h2>Midpoint <br> Check #1</h2> 
-        <p>Come meet with mentors, practice your pitches and get the feedback needed to enhance your overall solution. Your team will be required to attend only one Midpoint Check.</p>
-        <p class="bottomSchedule">
-          <span>Feb. 11th</span> 5:00pm - 9:00pm @ Ruskin Hall
-        </p>
+<!--
+      <div id="section2" class="sessionsSchedule carousel-cell">
+          <div id="section2" class="sessionsGrid">
+              <div>
+                  <h3>Lean Business <br>Model Canvas</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 205
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Find out more about turning your creative concept into a scalable business plan.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Emerging <br>Technologies</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 206
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Get a basic understanding of designing for the latest technologies incluing AR, VR, and Artifical Intelligence.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>From Research - <br> To Design</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 207
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Explore how you can transform your data about your target audience into a specific design direction.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Branding and <br> Final Deliverables</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 208
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Make sure that everything looks uniform and professional before shwoing off your final project.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Understanding <br> User Perspective</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 209
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Learn more about how to design for your users, including user journey maps and user scenarios.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+              <div>
+                  <h3>Designing a Good <br> Final Presentation</h3>
+                  <p>
+                      <span>Room:</span> Arnold Hall 210
+                      <br>
+                      <span>Times:</span> 11:30am, 12:30pm, 1:30pm
+                  </p>
+              </div>
+              <div class="sessionsDesc">
+                  <p>Discover exactly what you'll need to give a fast, enticing, and effective pitch.</p>
+                  <p class="span"><span>Hosts:</span> Coming soon</p>
+                  
+              </div>
+          </div>  
       </div>
-
-      <div class="scheduleEvent">
-        <h2>Midpoint <br> Check #2</h2> 
-        <p>Come meet with mentors, practice your pitches and get the feedback needed to enhance your overall solution. Your team will be required to attend only one Midpoint Check.</p>
-        <p class="bottomSchedule">
-          <span>Feb. 12th</span> 5:00pm - 9:00pm @ Ruskin Hall
-        </p>
-      </div>
-
-      <div class="scheduleEvent">
-        <h2>Semi-Final <br> Pitches</h2> 
-        <p>The day has come! Pitch your final solution to industry-professional mentors and judges.
-        <br><br>
-          This event is required for all teams.</p>
-        <p class="bottomSchedule">
-          <span>Feb. 14th</span> 8:30am - 11:00am @ Museum of Art Classrooms
-        </p>
-      </div>
-
-      <div class="scheduleEvent">
-        <h2>StartUp <br> Showcase</h2> 
-        <p>The StartUp Showcase is your time to vote for your “fan favorite” project, so invite as many people as you know. This event is open to all SCAD students.</p>
-        <p class="bottomSchedule">
-          <span>Feb. 14th</span> 12:00pm - 1:00pm @ Museum of Art Classrooms
-        </p>
-      </div>
+    -->
     </div>
-
-    <div class="scheduleEvent lastEvent">
-      <h2>StartUp <br> Celebration</h2> 
-      <p>Teams will set up for the StartUp Showcase, and vote for your favorite teams! The top 4 teams will be invited to pitch their projects. Oh yeah, did we mention there’ll be prizes?</p>
-      <p class="bottomSchedule">
-        <span>Feb. 14th</span> 1:00pm - 2:30pm @ Museum of Art Classrooms
-      </p>
-    </div>
-
-    <div class="scheduleNav-bottom">
-      <a href="/">StartUp Schedule</a>
-
-    </div>
-    
   </div>
-
-
-
 
   <div id="deliverables" class="deliverables">
     <div class="deliverablesHeader">
@@ -306,7 +476,7 @@
         <img src="./assets/img/team/zachra.png" alt="">
         <div class="name">
           <h2>Zachra <br> Pradipta</h2>
-          <p>Startup <br> Director</p>
+          <p>StartUp <br> Director</p>
         </div>
       </div>
     </a>
@@ -397,6 +567,15 @@
         <div class="name">
           <h2>Jena <br> Martin</h2>
           <p>Strategy + <br> Logistics</p>
+        </div>
+      </div>
+    </a>
+    <a target="_blank" href="https://www.willburkart.com/">
+      <div>
+        <img src="./assets/img/team/will.png" alt="">
+        <div class="name">
+          <h2>Will <br> Burkart</h2>
+          <p>Motion<br> Designer</p>
         </div>
       </div>
     </a>
@@ -507,6 +686,9 @@
     </a>
       </div>
 
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/lax.js"> </script>
 <script src="anime.min.js"></script>

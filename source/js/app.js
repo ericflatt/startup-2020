@@ -39,24 +39,37 @@ $(function() {
   $('#nav').onePageNav({
     currentClass: 'current',
     changeHash: false,
-    scrollSpeed: 750,
-    scrollThreshold: 0.5,
-    filter: '',
-    easing: 'swing',
-    begin: function() {
-      //I get fired when the animation is starting
-    },
-    end: function() {
-      //I get fired when the animation is ending
-    },
-    scrollChange: function($currentListItem) {
-      //I get fired when you enter a section and I pass the list item of the section
-    }
+    scrollThreshold: 0
   });
 
-  $('input[type="checkbox"]').on('change', function() {
-    $('input[type="checkbox"]').not(this).prop('checked', false);
- });
+  $( function() {
+  
+    var $gallery = $('.carousel').flickity({
+      pageDots: false
+    });
+  
+    var flickity = $gallery.data('flickity');
+    
+    var $galleryNav = $('.carousel-nav');
+    var $galleryNavItems = $galleryNav.find('li');
+    
+    $gallery.on( 'select.flickity', function() {
+      $galleryNav.find('.is-selected').removeClass('is-selected');
+      $galleryNavItems.eq( flickity.selectedIndex ).addClass('is-selected');
+    });
+    
+    $galleryNav.on( 'click', 'li', function() {
+      var index = $(this).index();
+      $gallery.flickity( 'select', index );
+    });
+    
+  });
+  
+
+
+  
+  
+  
 
 var countDownDate = new Date("Feb 7, 2020 12:00:00").getTime();
 
@@ -94,3 +107,4 @@ function Play()
   if (navVideo.paused)
   navVideo.play();
 }
+
