@@ -773,12 +773,11 @@ img {
 
 #video {
   width: 100%;
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 #home {
-  width: 100%;
-  display: flex; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .timer {
   position: relative;
@@ -946,7 +945,7 @@ nav {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-top: 0;
+  margin-top: -10px;
   color: #ffffff; }
   .whatis a {
     text-decoration: none; }
@@ -999,7 +998,7 @@ nav {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: 0;
+    margin-top: -10px;
     margin-bottom: 100px; } }
 
 .oneWeek div {
