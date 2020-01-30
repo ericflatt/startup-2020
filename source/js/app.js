@@ -65,13 +65,20 @@ $(function() {
     
   });
   
-
+//flickity options
+var elem = document.querySelector('.carousel-nav');
+var flkty = new Flickity( elem, {
+  cellAlign: 'left',
+  contain: 'false',
+  asNavFor:'.carousel',
+  draggable:'false'
+});
 
   
   
   
 
-var countDownDate = new Date("Feb 7, 2020 12:00:00").getTime();
+var countDownDate = new Date("Feb 7, 2020 11:00:00").getTime();
 
 var x = setInterval(function() {
 

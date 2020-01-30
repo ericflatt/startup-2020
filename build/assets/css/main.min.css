@@ -632,6 +632,25 @@ html {
 img {
   pointer-events: none; }
 
+@media only screen and (max-width: 1000px) {
+  .banner {
+    display: none; } }
+
+.banner {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background: linear-gradient(90deg, #d69b1b 0%, #b157dc 100%);
+  top: 70px;
+  color: white;
+  text-align: center; }
+  .banner span {
+    color: #FAEB6B;
+    font-weight: 700; }
+
+.boldSchedule {
+  font-weight: 700; }
+
 .carousel-nav {
   list-style: none;
   margin: 0;
@@ -764,31 +783,44 @@ img {
   .sessionsGrid p {
     margin: 0;
     padding: 35px;
-    color: #bdc7ff; }
+    color: white; }
+  .sessionsGrid .lightBlue {
+    color: white; }
   .sessionsGrid span {
     font-weight: 900;
     color: white; }
   .sessionsGrid .span {
     padding-top: 0; }
 
+.sessionsYellow {
+  color: #FAEB6B; }
+
 #video {
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  display: flex; }
 
 #home {
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
 
 .timer {
-  position: relative;
-  left: 0px;
-  bottom: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
   right: 0;
   width: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 2560px) {
+    .timer {
+      bottom: 150px; } }
+  @media only screen and (max-width: 1000px) {
+    .timer {
+      display: none; } }
 
 .navLogo {
   width: 50%;
@@ -945,8 +977,11 @@ nav {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-top: -10px;
+  margin-top: -30px;
   color: #ffffff; }
+  @media only screen and (max-width: 2560px) {
+    .whatis {
+      margin-top: -10px; } }
   .whatis a {
     text-decoration: none; }
   .whatis img {
@@ -962,6 +997,9 @@ nav {
     font-size: 40px;
     margin-bottom: 75px;
     color: #ffffff; }
+    @media only screen and (max-width: 1000px) {
+      .whatis h1 {
+        font-size: 25px !important; } }
   .whatis p {
     display: block;
     margin: auto;
@@ -998,7 +1036,7 @@ nav {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: -10px;
+    margin-top: -30px;
     margin-bottom: 100px; } }
 
 .oneWeek div {
@@ -1072,12 +1110,16 @@ nav {
 
 @media only screen and (max-width: 1000px) {
   .theme h1 {
-    font-size: 34px !important; } }
+    font-size: 25px !important; } }
 
 .theme2020 {
   top: 90px;
   width: 25%;
   mix-blend-mode: overlay; }
+  @media only screen and (max-width: 1000px) {
+    .theme2020 {
+      top: 65px;
+      width: 50%; } }
 
 .theme {
   background: #d69b1b;
@@ -1140,6 +1182,9 @@ nav {
   font-weight: 700;
   font-style: normal;
   font-size: 40px; }
+  @media only screen and (max-width: 1000px) {
+    .schedule h1 {
+      font-size: 25px !important; } }
 
 .scheduleHeader {
   display: flex;
@@ -1427,6 +1472,9 @@ nav {
 @media only screen and (max-width: 1000px) {
   .judges h1 {
     font-size: 34px !important; } }
+  @media only screen and (max-width: 1000px) and (max-width: 1000px) {
+    .judges h1 {
+      font-size: 25px !important; } }
 
 .judges {
   margin-bottom: 0;
@@ -1534,6 +1582,9 @@ nav {
     padding: 0 5%;
     font-size: 40px;
     line-height: 1.1; }
+    @media only screen and (max-width: 1000px) {
+      .partners h1 {
+        font-size: 25px !important; } }
   .partners p {
     text-align: center;
     margin: 0;
@@ -1553,6 +1604,9 @@ nav {
     color: white;
     font-size: 40px;
     margin-bottom: 75px; }
+    @media only screen and (max-width: 1000px) {
+      .team h1 {
+        font-size: 25px !important; } }
 
 @media only screen and (max-width: 1000px) {
   .teamGrid {
@@ -1599,9 +1653,13 @@ nav {
 .name {
   flex-direction: column; }
 
+@media only screen and (max-width: 100px) {
+  .mobileFont h1 {
+    font-size: 25px !important; } }
+
 @media only screen and (max-width: 1000px) {
   .questionIntro h1 {
-    font-size: 30px !important; } }
+    font-size: 25px !important; } }
 
 .questionIntro {
   padding: 0 5%;
@@ -1774,6 +1832,17 @@ nav {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: black; }
+
+#mentors {
+  background: #d69b1b;
+  background: linear-gradient(90deg, #b157dc 0%, #d69b1b 100%); }
+
+.moreMentors {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  margin-bottom: 0;
+  position: relative;
+  bottom: -73px; }
 
 .regsBody {
   margin: auto;
