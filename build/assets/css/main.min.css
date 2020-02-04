@@ -1483,7 +1483,8 @@ nav {
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   padding: 5%;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 5%; }
   .judgesGrid img {
     width: 100%; }
   @media only screen and (max-width: 1000px) {
@@ -1506,13 +1507,13 @@ nav {
   background-color: #2C4DFF; }
   .judges h1 {
     padding: 5% 5%;
+    padding-bottom: 0;
     font-size: 40px;
     font-family: 'titling-gothic-fb-extended',sans-serif;
     font-weight: 700;
     font-style: normal;
     margin-top: 0;
     line-height: 1.4;
-    padding-bottom: 5%;
     color: white; }
   .judges p {
     text-align: left;

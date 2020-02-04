@@ -1196,6 +1196,7 @@ nav{
     grid-row-gap: 50px;
     padding: 5%;
     padding-top: 0;
+    padding-bottom: 5%;
 
     img{
         width: 100%;
@@ -1227,13 +1228,13 @@ nav{
 
     h1{
         padding: 5% 5%;
+        padding-bottom: 0;
         font-size: 40px;
         font-family: 'titling-gothic-fb-extended',sans-serif;
         font-weight: 700;
         font-style: normal;
         margin-top: 0;
         line-height: 1.4;
-        padding-bottom: 5%;
         color: white;
     }
 
