@@ -6,6 +6,10 @@ html{
     overflow-x: hidden !important;
 }
 
+h1{
+    line-height: 1.2;
+}
+
 img{
     pointer-events: none;
 }
@@ -1234,7 +1238,7 @@ nav{
         font-weight: 700;
         font-style: normal;
         margin-top: 0;
-        line-height: 1.4;
+        line-height: 1.2;
         color: white;
     }
 
@@ -1358,10 +1362,51 @@ nav{
     padding: 5%;
 }
 
+.partnerImg{
+    @media only screen and (max-width:1000px){
+        flex-direction: column;
+        padding: 5% !important; 
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
 .partners{
     background-color: black;
     color: white;
-    padding-top: 5%;
+    display: flex;
+    align-items: center;
+
+
+    a{
+        margin-right: 75px;
+    }
+    @media only screen and (max-width:1000px){
+        flex-direction: column !important;
+
+        a{
+            margin-right: 0 !important;
+        }
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        padding: 5%;
+        padding-right: 15%;
+        margin-left: auto;
+        
+        @media only screen and (max-width:1000px){
+            div{
+                display: flex;
+                flex-direction: column !important;
+                padding-right: 0 !important;
+            }
+        }
+    }
+    
 
     h1{
         font-family: 'titling-gothic-fb-extended',sans-serif;
@@ -1369,7 +1414,7 @@ nav{
         font-style: normal;
         padding: 0 5%;
         font-size: 40px;
-        line-height: 1.1;
+        line-height: 1.2;
 
         @media only screen and (max-width:1000px){
             font-size: 25px !important;
@@ -1401,6 +1446,7 @@ nav{
         color: white;
         font-size: 40px;
         margin-bottom: 75px;
+        line-height: 1.2;
 
         @media only screen and (max-width:1000px){
             font-size: 25px !important;
@@ -1631,7 +1677,7 @@ nav{
         font-style: normal;
         color: white;
         font-size: 40px;
-        line-height: 1.4;
+        line-height: 1.2;
     }
 }
 
@@ -1745,3 +1791,8 @@ nav{
     bottom: -73px;
 }
 
+.mentors{
+    p{
+        color: white;
+    }
+}

@@ -629,6 +629,9 @@ h1, h2, h2, h4, h5, p {
 html {
   overflow-x: hidden !important; }
 
+h1 {
+  line-height: 1.2; }
+
 img {
   pointer-events: none; }
 
@@ -1513,7 +1516,7 @@ nav {
     font-weight: 700;
     font-style: normal;
     margin-top: 0;
-    line-height: 1.4;
+    line-height: 1.2;
     color: white; }
   .judges p {
     text-align: left;
@@ -1592,17 +1595,43 @@ nav {
 .seda {
   padding: 5%; }
 
+@media only screen and (max-width: 1000px) {
+  .partnerImg {
+    flex-direction: column;
+    padding: 5% !important; }
+    .partnerImg img {
+      width: 100%; } }
+
 .partners {
   background-color: black;
   color: white;
-  padding-top: 5%; }
+  display: flex;
+  align-items: center; }
+  .partners a {
+    margin-right: 75px; }
+  @media only screen and (max-width: 1000px) {
+    .partners {
+      flex-direction: column !important; }
+      .partners a {
+        margin-right: 0 !important; } }
+  .partners div {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    padding-right: 15%;
+    margin-left: auto; }
+    @media only screen and (max-width: 1000px) {
+      .partners div div {
+        display: flex;
+        flex-direction: column !important;
+        padding-right: 0 !important; } }
   .partners h1 {
     font-family: 'titling-gothic-fb-extended',sans-serif;
     font-weight: 700;
     font-style: normal;
     padding: 0 5%;
     font-size: 40px;
-    line-height: 1.1; }
+    line-height: 1.2; }
     @media only screen and (max-width: 1000px) {
       .partners h1 {
         font-size: 25px !important; } }
@@ -1624,7 +1653,8 @@ nav {
     font-style: normal;
     color: white;
     font-size: 40px;
-    margin-bottom: 75px; }
+    margin-bottom: 75px;
+    line-height: 1.2; }
     @media only screen and (max-width: 1000px) {
       .team h1 {
         font-size: 25px !important; } }
@@ -1786,7 +1816,7 @@ nav {
   font-style: normal;
   color: white;
   font-size: 40px;
-  line-height: 1.4; }
+  line-height: 1.2; }
 
 @media only screen and (max-width: 1000px) {
   .deliverablesHeader h1 {
@@ -1864,6 +1894,9 @@ nav {
   margin-bottom: 0;
   position: relative;
   bottom: -73px; }
+
+.mentors p {
+  color: white; }
 
 .regsBody {
   margin: auto;
