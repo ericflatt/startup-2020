@@ -1166,10 +1166,6 @@ nav{
 }
 
 
-
-
-
-
 .outline{
     font-family: 'titling-gothic-fb-extended',sans-serif;
     font-weight: 700;
@@ -1201,6 +1197,7 @@ nav{
     padding: 5%;
     padding-top: 0;
     padding-bottom: 5%;
+
 
     img{
         width: 100%;
@@ -1252,7 +1249,7 @@ nav{
     h3{
         padding: 0;
         margin: 0;
-        font-size: 21px;
+        font-size: 18px;
         font-family: 'titling-gothic-fb-extended',sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -1794,5 +1791,13 @@ nav{
 .mentors{
     p{
         color: white;
+    }
+}
+
+.fordLogo{
+    width: 75%;
+
+    @media only screen and (max-width:1000px){
+        width: 75% !important;
     }
 }

@@ -1526,7 +1526,7 @@ nav {
   .judges h3 {
     padding: 0;
     margin: 0;
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'titling-gothic-fb-extended',sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -1897,6 +1897,12 @@ nav {
 
 .mentors p {
   color: white; }
+
+.fordLogo {
+  width: 75%; }
+  @media only screen and (max-width: 1000px) {
+    .fordLogo {
+      width: 75% !important; } }
 
 .regsBody {
   margin: auto;
