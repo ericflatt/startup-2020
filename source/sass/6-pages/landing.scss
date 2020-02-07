@@ -582,7 +582,7 @@ nav{
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         margin-top: -30px;
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
     }
 }
 
@@ -730,11 +730,12 @@ nav{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 0 9%;
+    margin-top: 60px;
 
     img{
         width: 90%;
         margin-bottom: 50px;
-        margin-top: 75px;
+        // margin-top: 75px;
     }
 }
 
@@ -745,6 +746,7 @@ nav{
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        margin-top: 70px;
 
         img{
             width: 75%;
@@ -1799,5 +1801,43 @@ nav{
 
     @media only screen and (max-width:1000px){
         width: 75% !important;
+    }
+}
+
+.currentTheme {
+    width: 80%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.151);
+    border: solid white 2px;
+    margin: auto;
+    margin-top: 100px;
+    p {
+        font-size: 16px;
+        margin: auto;
+        top: 40px;
+        @media only screen and (max-width:650px){
+            top: 15px;
+        }
+    }
+    h1 {
+        margin-bottom: 20px;
+        top: 20px;
+        @media only screen and (max-width:650px){
+            top: 10px;
+        }
+
+    }
+}
+
+.currentThemeCopy {
+    width: 70%;
+    top: 20px !important;
+    @media only screen and (max-width:1000px){
+        width: 85%;
+        font-size: 15px !important;
+    }
+    @media only screen and (max-width:650px){
+        top: 10px !important;
+        font-size: 13px !important;
     }
 }
