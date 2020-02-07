@@ -1372,6 +1372,10 @@ nav{
     }
 }
 
+.youtubeLogo{
+    width: 100%;
+}
+
 .partners{
     background-color: black;
     color: white;
@@ -1393,9 +1397,11 @@ nav{
     div{
         display: flex;
         align-items: center;
-        padding: 5%;
-        padding-right: 15%;
         margin-left: auto;
+
+        img{
+            width: 100%;
+        }
         
         @media only screen and (max-width:1000px){
             div{
