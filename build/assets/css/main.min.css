@@ -1940,6 +1940,10 @@ nav {
       top: 10px !important;
       font-size: 13px !important; } }
 
+.previousYears {
+  top: 30px !important;
+  bottom: 30px; }
+
 .regsBody {
   margin: auto;
   max-width: 800px; }
