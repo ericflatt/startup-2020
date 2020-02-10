@@ -130,6 +130,26 @@ img{
     margin-top: 30px;
 }
 
+.deckLink{
+    padding: 15px 25px;
+    background-color: #0E2DD6;
+    text-decoration: none !important;
+}
+
+.rayVideo{
+    background: #2c2c2c !important;
+}
+
+.darkRay{
+    background-color: #0d0d0d !important;
+}
+
+.deckLink-dark{
+    padding: 15px 25px;
+    background-color: #0d0d0d;
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width:1000px){
     .sessionsGrid {
         display: block;
@@ -241,6 +261,10 @@ img{
 
     .lightBlue{
         color: white;
+        
+        a{
+            text-decoration: none;
+        }
     }
 
     span{
