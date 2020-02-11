@@ -1506,6 +1506,8 @@ nav {
   padding: 5%;
   padding-top: 0;
   padding-bottom: 5%; }
+  .judgesGrid a {
+    text-decoration: none; }
   .judgesGrid img {
     width: 100%; }
   @media only screen and (max-width: 1000px) {
