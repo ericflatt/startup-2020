@@ -64,7 +64,8 @@ $(function() {
     });
     
   });
-  
+ 
+
 //flickity options
 var elem = document.querySelector('.carousel-nav');
 var flkty = new Flickity( elem, {
@@ -74,8 +75,6 @@ var flkty = new Flickity( elem, {
   draggable:'false'
 });
 
-  
-  
   
 
 var countDownDate = new Date("Feb 7, 2020 11:00:00").getTime();
