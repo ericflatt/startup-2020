@@ -40,6 +40,12 @@ img{
     font-weight: 700;
 }
 
+.photoCarousel {
+    img{
+        width: 100%;
+    }
+}
+
   .carousel-nav {
     list-style: none;
     margin: 0;
@@ -1889,3 +1895,57 @@ nav{
         }
     }
 }
+
+.carouselWrapper {
+    width: 100vw;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin: auto;
+    padding: 30px;
+}
+
+.photoCarousel {
+    width: 80%;
+    margin: auto;
+    left: unset;
+    height: calc((100vw / 2.5));
+
+    
+}
+
+.flickity-page-dots {
+    bottom: 0px;
+  }
+
+#photoCarousel ol{
+    display: block !important;
+}
+
+
+.cPhoto1, .cPhoto2, .cPhoto3, .cPhoto4, .cPhoto5 {
+    // height: 300px;
+    // width: 100%;
+    margin: auto;
+    display: block;
+    // background-color: black;
+}
+
+// .cPhoto1 {
+//     background-image: url();
+// }
+
+// .cPhoto2 {
+//     background-image: url(../../../build/assets/img/imgCarousel/cPhoto1.jpg);
+// }
+
+// .cPhoto3 {
+//     background-image: url(../../../build/assets/img/imgCarousel/cPhoto1.jpg);
+// }
+
+// .cPhoto4 {
+//     background-image: url(../../../build/assets/img/imgCarousel/cPhoto1.jpg);
+// }
+
+// .cPhoto5 {
+//     background-image: url(../../../build/assets/img/imgCarousel/cPhoto1.jpg);
+// }
