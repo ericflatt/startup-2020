@@ -654,6 +654,9 @@ img {
 .boldSchedule {
   font-weight: 700; }
 
+.photoCarousel img {
+  width: 100%; }
+
 .carousel-nav {
   list-style: none;
   margin: 0;
@@ -1969,6 +1972,29 @@ nav {
   @media only screen and (max-width: 1000px) {
     .long-name h3 {
       font-size: 12px !important; } }
+
+.carouselWrapper {
+  width: 100vw;
+  height: 100%;
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 30px; }
+
+.photoCarousel {
+  width: 80%;
+  margin: auto;
+  left: unset;
+  height: calc((100vw / 2.5)); }
+
+.flickity-page-dots {
+  bottom: 0px; }
+
+#photoCarousel ol {
+  display: block !important; }
+
+.cPhoto1, .cPhoto2, .cPhoto3, .cPhoto4, .cPhoto5 {
+  margin: auto;
+  display: block; }
 
 .regsBody {
   margin: auto;

@@ -72,7 +72,8 @@ var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: 'false',
   asNavFor:'.carousel',
-  draggable:'false'
+  draggable:'false',
+  imagesLoaded: true
 });
 
   
