@@ -53,6 +53,17 @@ img{
     padding-left: 5%;
   }
 
+  .carousel img {
+    display: block;
+    height: 200px;
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    .carousel img {
+      height: 400px;
+    }
+  }
+
   .carousel {
     margin-bottom: 30px;
     counter-reset: gallery-cell;
@@ -115,14 +126,29 @@ img{
     }
 }
 
-.flickity-prev-next-button {
+.schedule .flickity-prev-next-button {
     width: 100px;
     height: 100px;
     background: transparent;
     display: none;
   }
 
-  .flickity-page-dots {
+  .flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+    background: transparent !important;
+
+    @media only screen and (max-width:1000px){
+        display: none;
+    }
+  }
+
+  .flickity-prev-next-button .arrow {
+    fill: #333333 !important;
+  }
+
+
+ .flickity-page-dots {
     display: none;
   }
 
@@ -523,11 +549,11 @@ nav{
 .whatis{
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: -30px;
+    margin-top: 0px;
     color: #ffffff;
 
     @media only screen and (max-width:2560px){
@@ -544,7 +570,7 @@ nav{
     }
 
     div:nth-child(1){
-        padding: 10%;
+        padding: 5% 5%;
         background-color: #2C4DFF;
     }
 
@@ -1908,9 +1934,7 @@ nav{
     width: 80%;
     margin: auto;
     left: unset;
-    height: calc((100vw / 2.5));
-
-    
+    height: calc((100vw / 2.7));    
 }
 
 .flickity-page-dots {

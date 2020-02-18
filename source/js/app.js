@@ -71,9 +71,8 @@ var elem = document.querySelector('.carousel-nav');
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: 'false',
-  asNavFor:'.carousel',
+  asNavFor:'.withNav',
   draggable:'false',
-  imagesLoaded: true
 });
 
   
